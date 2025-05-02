@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Digital Services";
+}
+
+<div class="DigitalServices-container">
+    <!-- Hero Section -->
+    <section class="DigitalServices-hero" data-aos="fade">
+        <div class="DigitalServices-hero-content">
+            <h1 class="DigitalServices-hero-title">Digital Services</h1>
+            <p class="DigitalServices-hero-subtitle">Access university resources anytime, anywhere through our digital platforms</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="DigitalServices-section">
+        <div class="DigitalServices-section-header" data-aos="fade-up">
+            <h2 class="DigitalServices-section-title">Our Digital Platforms</h2>
+            <p class="DigitalServices-section-description">Convenient access to essential university services</p>
+        </div>
+
+        <div class="DigitalServices-grid" data-cards-per-row="3">
+            <!-- Mobile App -->
+            <div class="DigitalServices-card" data-aos="fade-up">
+                <div class="DigitalServices-card-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="DigitalServices-card-content">
+                    <h3 class="DigitalServices-card-title">University Mobile App</h3>
+                    <p class="DigitalServices-card-text">Access university services, announcements, and resources on your mobile device.</p>
+                    <div class="DigitalServices-card-badges">
+                        <span class="DigitalServices-badge">
+                            <i class="fab fa-apple"></i> App Store
+                        </span>
+                        <span class="DigitalServices-badge">
+                            <i class="fab fa-google-play"></i> Play Store
+                        </span>
+                    </div>
+                    <a href="#" class="DigitalServices-button">Download Now</a>
+                </div>
+            </div>
+
+            <!-- Registration Portal -->
+            <div class="DigitalServices-card" data-aos="fade-up" data-aos-delay="50">
+                <div class="DigitalServices-card-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="DigitalServices-card-content">
+                    <h3 class="DigitalServices-card-title">Registration Portal</h3>
+                    <p class="DigitalServices-card-text">Register for courses, view academic records, and manage your student profile.</p>
+                    <a href="#" class="DigitalServices-button">Access Portal</a>
+                </div>
+            </div>
+
+            <!-- Student Portal -->
+            <div class="DigitalServices-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="DigitalServices-card-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="DigitalServices-card-content">
+                    <h3 class="DigitalServices-card-title">Student Portal</h3>
+                    <p class="DigitalServices-card-text">Comprehensive platform for academic resources, grades, and university communications.</p>
+                    <a href="#" class="DigitalServices-button">Login Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Include AOS library for scroll animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+@section scripts {
+    <script>
+        // Initialize AOS for scroll animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize card grids with specified number of cards per row
+        function initializeCardGrids() {
+            // Set default cards-per-row if not specified
+            document.querySelectorAll('.DigitalServices-grid:not([data-cards-per-row])').forEach(grid => {
+                grid.setAttribute('data-cards-per-row', '3');
+            });
+
+            // Force recalculate on window resize
+            window.addEventListener('resize', function() {
+                document.querySelectorAll('[data-cards-per-row]').forEach(grid => {
+                    grid.style.display = 'none';
+                    grid.offsetHeight; // Trigger reflow
+                    grid.style.display = '';
+                });
+            });
+        }
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCardGrids();
+        });
+    </script>
+}

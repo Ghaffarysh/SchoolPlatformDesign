@@ -1,0 +1,658 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Carousel Section -->
+<section class="home-carousel-section">
+    <div class="home-carousel" id="homeMainCarousel">
+        <div class="home-carousel-inner">
+            <!-- Slide 1 -->
+            <div class="home-carousel-item active">
+                <img src="/images/1.jpg" alt="Aerial view of university campus" class="home-carousel-img">
+                <div class="home-carousel-caption">
+                    <h2 class="home-carousel-title" data-aos="fade-up">Welcome to Our University</h2>
+                    <p class="home-carousel-text" data-aos="fade-up" data-aos-delay="100">A leading institution in higher education and research</p>
+                    <a href="/university/about" class="home-carousel-btn" data-aos="fade-up" data-aos-delay="200">Discover More</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="home-carousel-item">
+                <img src="/images/2.jpg" alt="Graduation ceremony" class="home-carousel-img">
+                <div class="home-carousel-caption">
+                    <h2 class="home-carousel-title" data-aos="fade-up">Celebrating Excellence</h2>
+                    <p class="home-carousel-text" data-aos="fade-up" data-aos-delay="100">Join our community of distinguished alumni</p>
+                    <a href="/life/alumni" class="home-carousel-btn" data-aos="fade-up" data-aos-delay="200">Alumni Network</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="home-carousel-item">
+                <img src="/images/3.jpg" alt="Students in research lab" class="home-carousel-img">
+                <div class="home-carousel-caption">
+                    <h2 class="home-carousel-title" data-aos="fade-up">Innovative Research</h2>
+                    <p class="home-carousel-text" data-aos="fade-up" data-aos-delay="100">Pushing boundaries in science and technology</p>
+                    <a href="/university/centers" class="home-carousel-btn" data-aos="fade-up" data-aos-delay="200">Research Centers</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="home-carousel-control home-carousel-prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="home-carousel-control home-carousel-next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="home-carousel-indicators">
+            <button class="home-carousel-indicator active" aria-label="Go to slide 1"></button>
+            <button class="home-carousel-indicator" aria-label="Go to slide 2"></button>
+            <button class="home-carousel-indicator" aria-label="Go to slide 3"></button>
+        </div>
+    </div>
+</section>
+
+<!-- University News Section -->
+<section class="home-section home-news-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">University News</h2>
+            <a href="/news" class="home-section-link">View All News</a>
+        </div>
+
+        <div class="home-news-grid">
+            <!-- News Item 1 -->
+            <article class="home-news-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="home-news-img-container">
+                    <img src="/images/1.jpg" alt="Research grant announcement" class="home-news-img">
+                    <span class="home-news-date">15 Oct 2023</span>
+                </div>
+                <div class="home-news-content">
+                    <h3 class="home-news-title">University Receives $5M Research Grant</h3>
+                    <p class="home-news-excerpt">Our research team secured major funding for renewable energy projects...</p>
+                    <a href="/news/research-grant" class="home-news-link">Read More</a>
+                </div>
+            </article>
+
+            <!-- News Item 2 -->
+            <article class="home-news-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="home-news-img-container">
+                    <img src="/images/2.jpg" alt="New university building" class="home-news-img">
+                    <span class="home-news-date">10 Oct 2023</span>
+                </div>
+                <div class="home-news-content">
+                    <h3 class="home-news-title">New Science Complex Opening</h3>
+                    <p class="home-news-excerpt">State-of-the-art facilities to enhance STEM education and research...</p>
+                    <a href="/news/new-building" class="home-news-link">Read More</a>
+                </div>
+            </article>
+
+            <!-- News Item 3 -->
+            <article class="home-news-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="home-news-img-container">
+                    <img src="/images/3.jpg" alt="University ranking" class="home-news-img">
+                    <span class="home-news-date">05 Oct 2023</span>
+                </div>
+                <div class="home-news-content">
+                    <h3 class="home-news-title">Ranked Top 10 Nationally</h3>
+                    <p class="home-news-excerpt">University achieves highest ever position in national rankings...</p>
+                    <a href="/news/ranking" class="home-news-link">Read More</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- University Announcements Section -->
+<section class="home-section home-announcements-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Announcements</h2>
+            <a href="/news/announcements" class="home-section-link">View All Announcements</a>
+        </div>
+
+        <div class="home-announcements-list">
+            <!-- Announcement 1 -->
+            <div class="home-announcement-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="home-announcement-date">
+                    <span class="home-announcement-day">25</span>
+                    <span class="home-announcement-month">Oct</span>
+                </div>
+                <div class="home-announcement-content">
+                    <h3 class="home-announcement-title">Registration Deadline Extension</h3>
+                    <p class="home-announcement-excerpt">Fall semester registration deadline extended to October 30th...</p>
+                </div>
+                <a href="/announcements/registration" class="home-announcement-link">Details</a>
+            </div>
+
+            <!-- Announcement 2 -->
+            <div class="home-announcement-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="home-announcement-date">
+                    <span class="home-announcement-day">20</span>
+                    <span class="home-announcement-month">Oct</span>
+                </div>
+                <div class="home-announcement-content">
+                    <h3 class="home-announcement-title">Campus Maintenance</h3>
+                    <p class="home-announcement-excerpt">Library will be closed for maintenance on October 22nd-24th...</p>
+                </div>
+                <a href="/announcements/maintenance" class="home-announcement-link">Details</a>
+            </div>
+
+            <!-- Announcement 3 -->
+            <div class="home-announcement-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="home-announcement-date">
+                    <span class="home-announcement-day">18</span>
+                    <span class="home-announcement-month">Oct</span>
+                </div>
+                <div class="home-announcement-content">
+                    <h3 class="home-announcement-title">Scholarship Applications Open</h3>
+                    <p class="home-announcement-excerpt">Applications for merit-based scholarships now being accepted...</p>
+                </div>
+                <a href="/announcements/scholarships" class="home-announcement-link">Details</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Events and Activities Section -->
+<section class="home-section home-events-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Events & Activities</h2>
+            <a href="/events" class="home-section-link">View All Events</a>
+        </div>
+
+        <div class="home-events-grid">
+            <!-- Event 1 -->
+            <div class="home-event-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="home-event-date">
+                    <span class="home-event-day">28</span>
+                    <span class="home-event-month">Oct</span>
+                </div>
+                <div class="home-event-content">
+                    <h3 class="home-event-title">Annual Research Symposium</h3>
+                    <p class="home-event-time"><i class="far fa-clock"></i> 9:00 AM - 5:00 PM</p>
+                    <p class="home-event-location"><i class="fas fa-map-marker-alt"></i> University Conference Center</p>
+                    <p class="home-event-description">Showcasing groundbreaking research from all disciplines...</p>
+                </div>
+                <a href="/events/research-symposium" class="home-event-link">More Info</a>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="home-event-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="home-event-date">
+                    <span class="home-event-day">05</span>
+                    <span class="home-event-month">Nov</span>
+                </div>
+                <div class="home-event-content">
+                    <h3 class="home-event-title">Career Fair 2023</h3>
+                    <p class="home-event-time"><i class="far fa-clock"></i> 10:00 AM - 3:00 PM</p>
+                    <p class="home-event-location"><i class="fas fa-map-marker-alt"></i> Student Union Building</p>
+                    <p class="home-event-description">Connect with top employers and explore career opportunities...</p>
+                </div>
+                <a href="/events/career-fair" class="home-event-link">More Info</a>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="home-event-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="home-event-date">
+                    <span class="home-event-day">15</span>
+                    <span class="home-event-month">Nov</span>
+                </div>
+                <div class="home-event-content">
+                    <h3 class="home-event-title">Cultural Festival</h3>
+                    <p class="home-event-time"><i class="far fa-clock"></i> 11:00 AM - 8:00 PM</p>
+                    <p class="home-event-location"><i class="fas fa-map-marker-alt"></i> University Quadrangle</p>
+                    <p class="home-event-description">Celebrating the diversity of our university community...</p>
+                </div>
+                <a href="/events/cultural-festival" class="home-event-link">More Info</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- University Overview Section -->
+<section class="home-section home-overview-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">University Overview</h2>
+        </div>
+
+        <div class="home-overview-content">
+            <div class="home-overview-text" data-aos="fade-right">
+                <p>Founded in 1975, our university has grown to become a leading institution of higher education, recognized for academic excellence, innovative research, and commitment to community engagement.</p>
+
+                <div class="home-overview-highlights">
+                    <div class="home-overview-highlight">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>50+ Undergraduate Programs</span>
+                    </div>
+                    <div class="home-overview-highlight">
+                        <i class="fas fa-flask"></i>
+                        <span>30 Research Centers</span>
+                    </div>
+                    <div class="home-overview-highlight">
+                        <i class="fas fa-globe"></i>
+                        <span>120+ Countries Represented</span>
+                    </div>
+                </div>
+
+                <a href="/university/about" class="home-overview-btn">Our History & Mission</a>
+            </div>
+
+            <div class="home-overview-image" data-aos="fade-left">
+                <img src="/images/1.jpg" alt="University campus overview" class="home-overview-img">
+                <div class="home-overview-image-caption">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Main Campus - Central District</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Introductory Video Section -->
+<section class="home-section home-video-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Discover Our University</h2>
+        </div>
+
+        <div class="home-video-container" data-aos="zoom-in">
+            <div class="home-video-wrapper">
+                <img src="/images/1.jpg" alt="University video poster" class="home-video-poster">
+                <button class="home-video-play-btn" aria-label="Play video">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+
+            <div class="home-video-caption">
+                <p>Take a virtual tour of our campus and facilities (2:34)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Statistics Section -->
+<section class="home-section home-stats-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">By The Numbers</h2>
+        </div>
+
+        <div class="home-stats-grid">
+            <div class="home-stat-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="home-stat-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="home-stat-number" data-count="15">0</div>
+                <div class="home-stat-label">Colleges</div>
+            </div>
+
+            <div class="home-stat-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="home-stat-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="home-stat-number" data-count="25000">0</div>
+                <div class="home-stat-label">Students</div>
+            </div>
+
+            <div class="home-stat-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="home-stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="home-stat-number" data-count="150000">0</div>
+                <div class="home-stat-label">Alumni</div>
+            </div>
+
+            <div class="home-stat-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="home-stat-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="home-stat-number" data-count="120">0</div>
+                <div class="home-stat-label">Academic Programs</div>
+            </div>
+
+            <div class="home-stat-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="home-stat-icon">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="home-stat-number" data-count="500">0</div>
+                <div class="home-stat-label">Research Projects</div>
+            </div>
+
+            <div class="home-stat-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="home-stat-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <div class="home-stat-number" data-count="90">0</div>
+                <div class="home-stat-label">Nationalities</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Links Section -->
+<section class="home-section home-quicklinks-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Quick Links</h2>
+        </div>
+
+        <div class="home-quicklinks-grid">
+            <a href="/portals/student" class="home-quicklink-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="home-quicklink-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3 class="home-quicklink-title">Student Portal</h3>
+                <p class="home-quicklink-desc">Access grades, schedules, and academic resources</p>
+            </a>
+
+            <a href="/portals/registration" class="home-quicklink-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="home-quicklink-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <h3 class="home-quicklink-title">Registration Portal</h3>
+                <p class="home-quicklink-desc">Register for courses and manage your schedule</p>
+            </a>
+
+            <a href="/services/administrative" class="home-quicklink-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="home-quicklink-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3 class="home-quicklink-title">Admissions Guide</h3>
+                <p class="home-quicklink-desc">Step-by-step guide to the admission process</p>
+            </a>
+
+            <a href="/services/digital" class="home-quicklink-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="home-quicklink-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="home-quicklink-title">Digital Services</h3>
+                <p class="home-quicklink-desc">Online services for students and staff</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Campus Life Section -->
+<section class="home-section home-campuslife-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Campus Life</h2>
+            <a href="/life/campus-life" class="home-section-link">View More</a>
+        </div>
+
+        <div class="home-campuslife-content">
+            <div class="home-campuslife-gallery" data-aos="fade-right">
+                <div class="home-campuslife-main-image">
+                    <img src="/images/1.jpg" alt="University library" class="home-campuslife-img">
+                </div>
+                <div class="home-campuslife-thumbnails">
+                    <img src="/images/1.jpg" alt="Sports facilities" class="home-campuslife-thumb active">
+                    <img src="/images/2.jpg" alt="Research lab" class="home-campuslife-thumb">
+                    <img src="/images/3.jpg" alt="Student cafeteria" class="home-campuslife-thumb">
+                    <img src="/images/1.jpg" alt="Campus garden" class="home-campuslife-thumb">
+                </div>
+            </div>
+
+            <div class="home-campuslife-text" data-aos="fade-left">
+                <h3 class="home-campuslife-subtitle">Vibrant Community</h3>
+                <p>Our campus offers a dynamic environment with modern facilities, diverse student organizations, and numerous opportunities for personal and professional growth.</p>
+
+                <div class="home-campuslife-features">
+                    <div class="home-campuslife-feature">
+                            <i class="fas fa-home"></i>
+
+                        <div>
+                            <h4>Residence Halls</h4>
+                            <p>Comfortable living spaces for 5,000 students</p>
+                        </div>
+                    </div>
+
+                    <div class="home-campuslife-feature">
+                        
+							<i class="fas fa-utensils"></i>
+                        
+                        <div>
+                            <h4>Dining Options</h4>
+                            <p>12 dining locations with diverse menus</p>
+                        </div>
+                    </div>
+
+                    <div class="home-campuslife-feature">
+                      
+							<i class="fas fa-running"></i>
+
+                         
+                        <div>
+                            <h4>Recreation</h4>
+                            <p>Olympic-size pool, gyms, and sports fields</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/life/campus-life" class="home-campuslife-btn">Explore Student Life</a>
+            </div>
+        </div>
+
+        <div class="home-campuslife-stories" data-aos="fade-up">
+            <h3 class="home-campuslife-stories-title">Student Success Stories</h3>
+
+            <div class="home-campuslife-stories-grid">
+                <div class="home-campuslife-story" data-aos="fade-up" data-aos-delay="100">
+                    <div class="home-campuslife-story-img">
+                        <img src="/images/1.jpg" alt="Student success story">
+                    </div>
+                    <div class="home-campuslife-story-content">
+                        <h4>Sarah Johnson</h4>
+                        <p class="home-campuslife-story-major">Computer Science, Class of 2022</p>
+                        <p class="home-campuslife-story-quote">"The research opportunities here gave me the skills to land my dream job at a tech startup."</p>
+                    </div>
+                </div>
+
+                <div class="home-campuslife-story" data-aos="fade-up" data-aos-delay="200">
+                    <div class="home-campuslife-story-img">
+                        <img src="/images/2.jpg" alt="Student success story">
+                    </div>
+                    <div class="home-campuslife-story-content">
+                        <h4>Ahmed Mohamed</h4>
+                        <p class="home-campuslife-story-major">Business Administration, Class of 2021</p>
+                        <p class="home-campuslife-story-quote">"The mentorship from professors helped me launch my own business right after graduation."</p>
+                    </div>
+                </div>
+
+                <div class="home-campuslife-story" data-aos="fade-up" data-aos-delay="300">
+                    <div class="home-campuslife-story-img">
+                        <img src="/images/3.jpg" alt="Student success story">
+                    </div>
+                    <div class="home-campuslife-story-content">
+                        <h4>Maria Gonzalez</h4>
+                        <p class="home-campuslife-story-major">Biomedical Engineering, Class of 2023</p>
+                        <p class="home-campuslife-story-quote">"The hands-on labs and industry partnerships prepared me perfectly for my career."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Accreditations Section -->
+<section class="home-section home-accreditations-section" data-aos="fade-up">
+    <div class="container">
+        <div class="home-section-header">
+            <h2 class="home-section-title">Accreditations & Rankings</h2>
+        </div>
+
+        <div class="home-accreditations-content">
+            <div class="home-accreditations-text" data-aos="fade-right">
+                <h3 class="home-accreditations-subtitle">Recognized Excellence</h3>
+                <p>Our university maintains the highest standards of academic quality, as evidenced by our accreditation from prestigious organizations and consistent recognition in national and international rankings.</p>
+
+                <div class="home-accreditations-highlights">
+                    <div class="home-accreditations-highlight">
+                        <i class="fas fa-award"></i>
+                        <span>Fully accredited by the Ministry of Education</span>
+                    </div>
+                    <div class="home-accreditations-highlight">
+                        <i class="fas fa-star"></i>
+                        <span>5-star QS rating for teaching and facilities</span>
+                    </div>
+                    <div class="home-accreditations-highlight">
+                        <i class="fas fa-trophy"></i>
+                        <span>Top 10 nationally for graduate employability</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-accreditations-logos" data-aos="fade-left">
+                <div class="home-accreditations-logo">
+                    <img src="/images/1.jpg" alt="Ministry of Education Accreditation">
+                </div>
+                <div class="home-accreditations-logo">
+                    <img src="/images/2.jpg" alt="QS Stars Rating">
+                </div>
+                <div class="home-accreditations-logo">
+                    <img src="/images/1.jpg" alt="ABET Accreditation">
+                </div>
+                <div class="home-accreditations-logo">
+                    <img src="/images/3.jpg" alt="AACSB Accreditation">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add AOS initialization script -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Carousel functionality
+        const carousel = document.getElementById('homeMainCarousel');
+        if (carousel) {
+            const items = carousel.querySelectorAll('.home-carousel-item');
+            const indicators = carousel.querySelectorAll('.home-carousel-indicator');
+            let currentIndex = 0;
+            let interval;
+
+            function showSlide(index) {
+                items.forEach(item => item.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+
+                items[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentIndex = index;
+            }
+
+            function nextSlide() {
+                let newIndex = (currentIndex + 1) % items.length;
+                showSlide(newIndex);
+            }
+
+            function startCarousel() {
+                interval = setInterval(nextSlide, 5000);
+            }
+
+            function stopCarousel() {
+                clearInterval(interval);
+            }
+
+            // Navigation controls
+            carousel.querySelector('.home-carousel-next').addEventListener('click', () => {
+                stopCarousel();
+                nextSlide();
+                startCarousel();
+            });
+
+            carousel.querySelector('.home-carousel-prev').addEventListener('click', () => {
+                stopCarousel();
+                let newIndex = (currentIndex - 1 + items.length) % items.length;
+                showSlide(newIndex);
+                startCarousel();
+            });
+
+            // Indicators
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    stopCarousel();
+                    showSlide(index);
+                    startCarousel();
+                });
+            });
+
+            // Start the carousel
+            showSlide(0);
+            startCarousel();
+
+            // Pause on hover
+            carousel.addEventListener('mouseenter', stopCarousel);
+            carousel.addEventListener('mouseleave', startCarousel);
+        }
+
+        // Statistics counter animation
+        const statNumbers = document.querySelectorAll('.home-stat-number');
+        if (statNumbers.length > 0) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const count = parseInt(target.getAttribute('data-count'));
+                        const duration = 2000;
+                        const step = count / (duration / 16);
+                        let current = 0;
+
+                        const counter = setInterval(() => {
+                            current += step;
+                            if (current >= count) {
+                                clearInterval(counter);
+                                target.textContent = count.toLocaleString();
+                            } else {
+                                target.textContent = Math.floor(current).toLocaleString();
+                            }
+                        }, 16);
+
+                        observer.unobserve(target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            statNumbers.forEach(number => {
+                observer.observe(number);
+            });
+        }
+
+        // Campus life image gallery
+        const thumbs = document.querySelectorAll('.home-campuslife-thumb');
+        const mainImage = document.querySelector('.home-campuslife-main-image img');
+
+        if (thumbs.length > 0 && mainImage) {
+            thumbs.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    thumbs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // In a real implementation, you would change the main image source
+                    // mainImage.src = this.dataset.fullImage;
+                });
+            });
+        }
+
+        // Video play button
+        const videoPlayBtn = document.querySelector('.home-video-play-btn');
+        if (videoPlayBtn) {
+            videoPlayBtn.addEventListener('click', function() {
+                // In a real implementation, this would launch a modal with the video
+                alert('Video player would open here');
+            });
+        }
+    });
+</script>

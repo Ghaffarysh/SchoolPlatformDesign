@@ -1,0 +1,420 @@
+﻿@{
+    ViewData["Title"] = "University News";
+}
+
+<div class="news-container">
+    <!-- News Search and Filters Section -->
+    <section class="news-search-section">
+        <div class="news-search-container">
+            <h1 class="news-main-title">University News</h1>
+            <div class="news-search-bar">
+                <input type="text" placeholder="Search news..." class="news-search-input">
+                <button class="news-search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="news-filter-controls">
+                <div class="news-filter-group">
+                    <label for="news-sort" class="news-filter-label">Sort by:</label>
+                    <select id="news-sort" class="news-filter-select">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="popular">Most Popular</option>
+                    </select>
+                </div>
+                <div class="news-filter-group">
+                    <label for="news-category" class="news-filter-label">Category:</label>
+                    <select id="news-category" class="news-filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="academic">Academic</option>
+                        <option value="research">Research</option>
+                        <option value="events">Events</option>
+                        <option value="achievements">Achievements</option>
+                    </select>
+                </div>
+                <button class="news-filter-button">
+                    <i class="fas fa-sliders-h"></i> Advanced Filters
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News Hero Section -->
+    <section class="news-hero-section" data-aos="fade-up">
+        <div class="news-hero-container">
+            <div class="news-hero-image">
+                <img src="/images/1.jpg" alt="Featured University News" class="news-hero-img">
+                <div class="news-hero-badge">Featured</div>
+            </div>
+            <div class="news-hero-content">
+                <div class="news-hero-meta">
+                    <span class="news-hero-category">Academic</span>
+                    <span class="news-hero-date">May 15, 2023</span>
+                </div>
+                <h2 class="news-hero-title">University Ranked Among Top 100 Worldwide for Research Excellence</h2>
+                <p class="news-hero-excerpt">Our university has been recognized as one of the top 100 institutions globally for research impact and innovation, marking a significant milestone in our academic journey.</p>
+                <div class="news-hero-actions">
+                    <a href="#" class="news-read-more">Read Full Story</a>
+                    <div class="news-social-share">
+                        <span>Share:</span>
+                        <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent News Grid -->
+    <section class="news-recent-section" data-aos="fade-up">
+        <div class="news-section-header">
+            <h2 class="news-section-title">Recent News</h2>
+            <a href="#" class="news-view-all">View All</a>
+        </div>
+        <div class="news-grid">
+            <!-- News Item 1 -->
+            <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="news-card-image">
+                    <img src="/images/2.jpg" alt="News thumbnail" class="news-card-img">
+                    <div class="news-card-category research">Research</div>
+                </div>
+                <div class="news-card-content">
+                    <h3 class="news-card-title">Breakthrough in Renewable Energy Research</h3>
+                    <p class="news-card-excerpt">Our engineering team has developed a new solar panel technology that increases efficiency by 25%.</p>
+                    <div class="news-card-meta">
+                        <span class="news-card-date">May 10, 2023</span>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Item 2 -->
+            <article class="news-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="news-card-image">
+                    <img src="/images/3.jpg" alt="News thumbnail" class="news-card-img">
+                    <div class="news-card-category academic">Academic</div>
+                </div>
+                <div class="news-card-content">
+                    <h3 class="news-card-title">New Interdisciplinary Program Launched</h3>
+                    <p class="news-card-excerpt">The university introduces a combined Computer Science and Business Administration degree program.</p>
+                    <div class="news-card-meta">
+                        <span class="news-card-date">May 8, 2023</span>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Item 3 -->
+            <article class="news-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="news-card-image">
+                    <img src="/images/4.jpg" alt="News thumbnail" class="news-card-img">
+                    <div class="news-card-category events">Events</div>
+                </div>
+                <div class="news-card-content">
+                    <h3 class="news-card-title">Annual Science Festival Attracts Thousands</h3>
+                    <p class="news-card-excerpt">The week-long event featured interactive exhibits, guest lectures, and student research presentations.</p>
+                    <div class="news-card-meta">
+                        <span class="news-card-date">May 5, 2023</span>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Item 4 -->
+            <article class="news-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="news-card-image">
+                    <img src="/images/1.jpg" alt="News thumbnail" class="news-card-img">
+                    <div class="news-card-category achievements">Achievements</div>
+                </div>
+                <div class="news-card-content">
+                    <h3 class="news-card-title">Student Wins International Design Competition</h3>
+                    <p class="news-card-excerpt">Architecture student awarded first prize for sustainable urban design project in global competition.</p>
+                    <div class="news-card-meta">
+                        <span class="news-card-date">May 3, 2023</span>
+                        <a href="#" class="news-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Most Read Section -->
+    <section class="news-popular-section" data-aos="fade-up">
+        <div class="news-section-header">
+            <h2 class="news-section-title">Most Read</h2>
+        </div>
+        <div class="news-popular-list">
+            <!-- Popular Item 1 -->
+            <article class="news-popular-item">
+                <div class="news-popular-rank">1</div>
+                <div class="news-popular-content">
+                    <h3 class="news-popular-title">University Announces Tuition Freeze for Third Consecutive Year</h3>
+                    <div class="news-popular-meta">
+                        <span class="news-popular-category academic">Academic</span>
+                        <span class="news-popular-date">April 28, 2023</span>
+                        <span class="news-popular-views"><i class="fas fa-eye"></i> 2,453</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Popular Item 2 -->
+            <article class="news-popular-item">
+                <div class="news-popular-rank">2</div>
+                <div class="news-popular-content">
+                    <h3 class="news-popular-title">New Research Center Focused on AI Ethics Established</h3>
+                    <div class="news-popular-meta">
+                        <span class="news-popular-category research">Research</span>
+                        <span class="news-popular-date">April 25, 2023</span>
+                        <span class="news-popular-views"><i class="fas fa-eye"></i> 1,987</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Popular Item 3 -->
+            <article class="news-popular-item">
+                <div class="news-popular-rank">3</div>
+                <div class="news-popular-content">
+                    <h3 class="news-popular-title">Annual Career Fair Connects Students with Top Employers</h3>
+                    <div class="news-popular-meta">
+                        <span class="news-popular-category events">Events</span>
+                        <span class="news-popular-date">April 22, 2023</span>
+                        <span class="news-popular-views"><i class="fas fa-eye"></i> 1,756</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Category Tabs Section -->
+    <section class="news-categories-section" data-aos="fade-up">
+        <div class="news-section-header">
+            <h2 class="news-section-title">Browse by Category</h2>
+        </div>
+        <div class="news-categories-tabs">
+            <button class="news-tab-button active" data-category="all">All News</button>
+            <button class="news-tab-button" data-category="academic">Academic</button>
+            <button class="news-tab-button" data-category="research">Research</button>
+            <button class="news-tab-button" data-category="events">Events</button>
+            <button class="news-tab-button" data-category="achievements">Achievements</button>
+        </div>
+    </section>
+
+    <!-- Events Calendar Section -->
+    <section class="news-events-section" data-aos="fade-up">
+        <div class="news-section-header">
+            <h2 class="news-section-title">Upcoming Events</h2>
+            <a href="#" class="news-view-all">View Calendar</a>
+        </div>
+        <div class="news-events-calendar">
+            <div class="news-calendar-header">
+                <button class="news-calendar-nav"><i class="fas fa-chevron-left"></i></button>
+                <h3 class="news-calendar-month">June 2023</h3>
+                <button class="news-calendar-nav"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="news-calendar-grid">
+                <!-- Calendar days would be generated dynamically in a real implementation -->
+                <div class="news-calendar-day">1</div>
+                <div class="news-calendar-day">2</div>
+                <div class="news-calendar-day has-event">
+                    3
+                    <div class="news-calendar-event-tooltip">Graduation Ceremony</div>
+                </div>
+                <div class="news-calendar-day">4</div>
+                <div class="news-calendar-day">5</div>
+                <div class="news-calendar-day has-event">
+                    6
+                    <div class="news-calendar-event-tooltip">Research Symposium</div>
+                </div>
+                <div class="news-calendar-day">7</div>
+                <!-- More days... -->
+            </div>
+        </div>
+        <div class="news-events-list">
+            <div class="news-event-card">
+                <div class="news-event-date">
+                    <span class="news-event-day">15</span>
+                    <span class="news-event-month">Jun</span>
+                </div>
+                <div class="news-event-details">
+                    <h3 class="news-event-title">Open Day for Prospective Students</h3>
+                    <p class="news-event-time"><i class="far fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                    <p class="news-event-location"><i class="fas fa-map-marker-alt"></i> Main Campus</p>
+                </div>
+                <a href="#" class="news-event-button">Details</a>
+            </div>
+            <div class="news-event-card">
+                <div class="news-event-date">
+                    <span class="news-event-day">22</span>
+                    <span class="news-event-month">Jun</span>
+                </div>
+                <div class="news-event-details">
+                    <h3 class="news-event-title">Guest Lecture: Sustainable Architecture</h3>
+                    <p class="news-event-time"><i class="far fa-clock"></i> 2:00 PM - 4:00 PM</p>
+                    <p class="news-event-location"><i class="fas fa-map-marker-alt"></i> Engineering Building</p>
+                </div>
+                <a href="#" class="news-event-button">Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section class="news-multimedia-section" data-aos="fade-up">
+        <div class="news-section-header">
+            <h2 class="news-section-title">Multimedia</h2>
+            <a href="#" class="news-view-all">View All</a>
+        </div>
+        <div class="news-multimedia-tabs">
+            <button class="news-media-tab active" data-media="videos">Videos</button>
+            <button class="news-media-tab" data-media="photos">Photo Galleries</button>
+            <button class="news-media-tab" data-media="podcasts">Podcasts</button>
+        </div>
+        <div class="news-multimedia-content">
+            <div class="news-video-grid">
+                <div class="news-video-card">
+                    <div class="news-video-thumbnail">
+                        <img src="/images/2.jpg" alt="Video thumbnail" class="news-video-img">
+                        <button class="news-video-play"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3 class="news-video-title">Campus Tour 2023</h3>
+                    <p class="news-video-meta">Posted: May 12, 2023</p>
+                </div>
+                <div class="news-video-card">
+                    <div class="news-video-thumbnail">
+                        <img src="/images/3.jpg" alt="Video thumbnail" class="news-video-img">
+                        <button class="news-video-play"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3 class="news-video-title">Interview with Nobel Laureate</h3>
+                    <p class="news-video-meta">Posted: May 5, 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar and Main Content Layout -->
+    <div class="news-layout-container">
+        <main class="news-main-content">
+            <!-- Previous sections would be here -->
+        </main>
+
+        <aside class="news-sidebar">
+            <!-- Newsletter Subscription -->
+            <div class="news-sidebar-widget" data-aos="fade-up">
+                <h3 class="news-widget-title">Stay Updated</h3>
+                <p class="news-widget-text">Subscribe to our newsletter for the latest news and updates.</p>
+                <form class="news-newsletter-form">
+                    <input type="email" placeholder="Your email address" class="news-newsletter-input">
+                    <button type="submit" class="news-newsletter-button">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- News Archive -->
+            <div class="news-sidebar-widget" data-aos="fade-up">
+                <h3 class="news-widget-title">News Archive</h3>
+                <div class="news-archive-list">
+                    <a href="#" class="news-archive-item">May 2023 <span>(24)</span></a>
+                    <a href="#" class="news-archive-item">April 2023 <span>(18)</span></a>
+                    <a href="#" class="news-archive-item">March 2023 <span>(22)</span></a>
+                    <a href="#" class="news-archive-item">February 2023 <span>(15)</span></a>
+                    <a href="#" class="news-archive-item">January 2023 <span>(12)</span></a>
+                    <a href="#" class="news-archive-item">2022 Archive</a>
+                </div>
+            </div>
+
+            <!-- Quick Poll -->
+            <div class="news-sidebar-widget" data-aos="fade-up">
+                <h3 class="news-widget-title">Quick Poll</h3>
+                <p class="news-widget-text">How often do you visit the university website?</p>
+                <form class="news-poll-form">
+                    <div class="news-poll-option">
+                        <input type="radio" id="poll-daily" name="poll-frequency" value="daily">
+                        <label for="poll-daily">Daily</label>
+                    </div>
+                    <div class="news-poll-option">
+                        <input type="radio" id="poll-weekly" name="poll-frequency" value="weekly">
+                        <label for="poll-weekly">Weekly</label>
+                    </div>
+                    <div class="news-poll-option">
+                        <input type="radio" id="poll-monthly" name="poll-frequency" value="monthly">
+                        <label for="poll-monthly">Monthly</label>
+                    </div>
+                    <div class="news-poll-option">
+                        <input type="radio" id="poll-rarely" name="poll-frequency" value="rarely">
+                        <label for="poll-rarely">Rarely</label>
+                    </div>
+                    <button type="submit" class="news-poll-button">Vote</button>
+                </form>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="news-sidebar-widget" data-aos="fade-up">
+                <h3 class="news-widget-title">Quick Links</h3>
+                <div class="news-quicklinks-list">
+                    <a href="#" class="news-quicklink"><i class="fas fa-newspaper"></i> Press Releases</a>
+                    <a href="#" class="news-quicklink"><i class="fas fa-bullhorn"></i> Announcements</a>
+                    <a href="#" class="news-quicklink"><i class="fas fa-graduation-cap"></i> Graduation Info</a>
+                    <a href="#" class="news-quicklink"><i class="fas fa-calendar-alt"></i> Academic Calendar</a>
+                    <a href="#" class="news-quicklink"><i class="fas fa-microphone"></i> Public Lectures</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="news-back-to-top" class="news-back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</div>
+
+<!-- Initialize AOS for scroll animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 120
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('news-back-to-top');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.news-tab-button');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                // In a real implementation, you would filter content here
+            });
+        });
+
+        // Media tab functionality
+        const mediaTabs = document.querySelectorAll('.news-media-tab');
+        mediaTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                mediaTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                // In a real implementation, you would switch media content here
+            });
+        });
+    });
+</script>

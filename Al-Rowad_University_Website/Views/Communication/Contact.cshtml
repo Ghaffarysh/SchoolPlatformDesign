@@ -1,0 +1,313 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="contact-container">
+    <!-- Hero Section -->
+    <section class="contact-hero" data-aos="fade-up">
+        <div class="contact-hero-content">
+            <h1 class="contact-hero-title">Get In Touch</h1>
+            <p class="contact-hero-text">We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Cards Section -->
+    <section class="contact-cards-section">
+        <div class="contact-cards-grid">
+            <!-- Contact Information Card -->
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-card-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="contact-card-title">Email Us</h3>
+                <div class="contact-card-content">
+                    <p>For general inquiries:</p>
+                    <a href="mailto:info@alrowwad.edu" class="contact-card-link">info@alrowwad.edu</a>
+                    <p>For admissions:</p>
+                    <a href="mailto:admissions@alrowwad.edu" class="contact-card-link">admissions@alrowwad.edu</a>
+                </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="contact-card-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3 class="contact-card-title">Call Us</h3>
+                <div class="contact-card-content">
+                    <p>Main switchboard:</p>
+                    <a href="tel:+96741234567" class="contact-card-link">+967 4 123 4567</a>
+                    <p>Admissions office:</p>
+                    <a href="tel:+96741234568" class="contact-card-link">+967 4 123 4568</a>
+                </div>
+            </div>
+
+            <!-- Visit Card -->
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-card-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="contact-card-title">Visit Us</h3>
+                <div class="contact-card-content">
+                    <p>HXHM+446 Al-Rowwad University</p>
+                    <p>Unnamed Road, Taiz, Yemen</p>
+                    <p>Working hours: Sun-Thu 8AM-4PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map Section -->
+    <section class="contact-form-map-section">
+        <div class="contact-form-map-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-container" data-aos="fade-right">
+                <h2 class="contact-section-title">Send Us a Message</h2>
+                <form class="contact-form">
+                    <div class="contact-form-group">
+                        <label for="contact-name" class="contact-form-label">Full Name</label>
+                        <input type="text" id="contact-name" class="contact-form-input" required>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="contact-email" class="contact-form-label">Email Address</label>
+                        <input type="email" id="contact-email" class="contact-form-input" required>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="contact-subject" class="contact-form-label">Subject</label>
+                        <select id="contact-subject" class="contact-form-input">
+                            <option value="general">General Inquiry</option>
+                            <option value="admissions">Admissions</option>
+                            <option value="academic">Academic Questions</option>
+                            <option value="research">Research Collaboration</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="contact-message" class="contact-form-label">Your Message</label>
+                        <textarea id="contact-message" class="contact-form-textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-form-button">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map Card -->
+            <div class="contact-map-card" data-aos="fade-left">
+                <h2 class="contact-section-title">Our Location</h2>
+                <div id="university-map" class="contact-map-container"></div>
+                <div class="contact-map-address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>HXHM+446 Al-Rowwad University, Unnamed Road, Taiz, Yemen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="contact-social-section" data-aos="fade-up">
+        <h2 class="contact-section-title">Connect With Us</h2>
+        <p class="contact-social-text">Follow our social media channels to stay updated with the latest news and events.</p>
+
+        <div class="contact-social-grid">
+            <a href="#" class="social-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="social-card-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <h3 class="social-card-title">Facebook</h3>
+                <p class="social-card-handle">AlRowwadUniversity</p>
+            </a>
+
+            <a href="#" class="social-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="social-card-icon twitter">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <h3 class="social-card-title">Twitter</h3>
+                <p class="social-card-handle">AlRowwadUni</p>
+            </a>
+
+            <a href="#" class="social-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="social-card-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h3 class="social-card-title">Instagram</h3>
+                <p class="social-card-handle">AlRowwadUniversity</p>
+            </a>
+
+            <a href="#" class="social-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="social-card-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <h3 class="social-card-title">LinkedIn</h3>
+                <p class="social-card-handle">Al-Rowwad University</p>
+            </a>
+
+            <a href="#" class="social-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="social-card-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <h3 class="social-card-title">YouTube</h3>
+                <p class="social-card-handle">AlRowwad University</p>
+            </a>
+
+            <a href="#" class="social-card" data-aos="fade-up" data-aos-delay="350">
+                <div class="social-card-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3 class="social-card-title">WhatsApp</h3>
+                <p class="social-card-handle">+967 123 456 789</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- University Directories Section -->
+    <section class="contact-directories-section" data-aos="fade-up">
+        <h2 class="contact-section-title">University Directories</h2>
+        <p class="contact-directories-text">Connect with our university through global search engines and academic networks.</p>
+
+        <div class="contact-directories-grid">
+            <a href="#" class="directory-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="directory-card-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="directory-card-title">Google Scholar</h3>
+                <p class="directory-card-text">View our academic publications and research</p>
+            </a>
+
+            <a href="#" class="directory-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="directory-card-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="directory-card-title">ResearchGate</h3>
+                <p class="directory-card-text">Connect with our researchers</p>
+            </a>
+
+            <a href="#" class="directory-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="directory-card-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3 class="directory-card-title">ORCID</h3>
+                <p class="directory-card-text">Explore our academic profiles</p>
+            </a>
+
+            <a href="#" class="directory-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="directory-card-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3 class="directory-card-title">WorldCat</h3>
+                <p class="directory-card-text">Discover our library holdings</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section class="contact-collaboration-section" data-aos="fade-up">
+        <h2 class="contact-section-title">Academic Collaboration</h2>
+        <p class="contact-collaboration-text">We welcome partnerships with educational institutions worldwide.</p>
+
+        <div class="contact-collaboration-grid">
+            <div class="collaboration-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="collaboration-card-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 class="collaboration-card-title">Student Exchange</h3>
+                <p class="collaboration-card-text">Establish student exchange programs with our university</p>
+                <a href="#" class="collaboration-card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="collaboration-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="collaboration-card-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <h3 class="collaboration-card-title">Research Partnerships</h3>
+                <p class="collaboration-card-text">Collaborate on joint research projects</p>
+                <a href="#" class="collaboration-card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="collaboration-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="collaboration-card-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="collaboration-card-title">Faculty Exchange</h3>
+                <p class="collaboration-card-text">Exchange faculty members for teaching and research</p>
+                <a href="#" class="collaboration-card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="collaboration-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="collaboration-card-icon">
+                    <i class="fas fa-globe-africa"></i>
+                </div>
+                <h3 class="collaboration-card-title">International Programs</h3>
+                <p class="collaboration-card-text">Develop joint degree programs</p>
+                <a href="#" class="collaboration-card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Initialize AOS for scroll animations -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Leaflet JS for interactive maps -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 120
+        });
+
+        // Initialize Map
+        function initMap() {
+            // Convert coordinates from DMS to decimal
+            const latitude = 13 + (34 / 60) + (39 / 3600); // 13°34'39"N
+            const longitude = 43 + (58 / 60) + (58 / 3600); // 43°58'58"E
+
+            const universityLocation = [latitude, longitude];
+
+            // Create map centered on university location
+            const map = L.map('university-map').setView(universityLocation, 16);
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Add custom marker
+            const universityIcon = L.divIcon({
+                className: 'university-marker',
+                html: '<i class="fas fa-map-marker-alt"></i>',
+                iconSize: [40, 40],
+                iconAnchor: [20, 40]
+            });
+
+            // Add marker to map
+            L.marker(universityLocation, {
+                icon: universityIcon,
+                title: 'Al-Rowwad University',
+                alt: 'Al-Rowwad University Location Marker'
+            }).addTo(map)
+              .bindPopup('<b>Al-Rowwad University</b><br>HXHM+446, Taiz, Yemen');
+
+            // Add click event to open Google Maps in new tab
+            map.on('click', function() {
+                window.open(`https://www.google.com/maps?q=${latitude},${longitude}`, '_blank');
+            });
+        }
+
+        // Initialize map when the map container is in viewport
+        const mapObserver = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                initMap();
+                mapObserver.disconnect();
+            }
+        }, { threshold: 0.1 });
+
+        const mapElement = document.getElementById('university-map');
+        if (mapElement) {
+            mapObserver.observe(mapElement);
+        }
+    });
+</script>

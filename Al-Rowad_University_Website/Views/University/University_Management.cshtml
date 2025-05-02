@@ -1,0 +1,438 @@
+﻿@{
+    ViewData["Title"] = "University Management";
+}
+
+<div class="UniManage-container">
+    <!-- Hero Section -->
+    <section class="UniManage-hero" data-aos="fade">
+        <div class="UniManage-hero-content">
+            <h1 class="UniManage-hero-title">University Leadership</h1>
+            <p class="UniManage-hero-subtitle">Guiding our institution towards excellence in education and research</p>
+        </div>
+    </section>
+
+    <!-- Senior Management -->
+    <section class="UniManage-section" id="senior-management">
+        <div class="UniManage-section-header" data-aos="fade-up">
+            <h2 class="UniManage-section-title">Senior Management</h2>
+            <p class="UniManage-section-description">The executive leadership team guiding our university's strategic direction</p>
+        </div>
+
+        <div class="UniManage-grid" data-cards-per-row="3">
+            <!-- University President -->
+            <div class="UniManage-card UniManage-card-featured" data-aos="fade-up" data-aos-delay="100">
+                <div class="UniManage-card-image-container">
+                    <img src="/images/1.jpg" alt="University President" class="UniManage-card-image">
+                    <div class="UniManage-card-badge">President</div>
+                </div>
+                <div class="UniManage-card-content">
+                    <h3 class="UniManage-card-title">Dr. Ahmed Al-Mansoori</h3>
+                    <p class="UniManage-card-position">University President</p>
+                    <div class="UniManage-card-actions">
+                        <button class="UniManage-button UniManage-button-outline" data-modal-target="#presidentModal">View Profile</button>
+                        <button class="UniManage-button" onclick="window.location.href='/university/president-office'">Office Structure</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vice Presidents -->
+            <div class="UniManage-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="UniManage-card-image-container">
+                    <img src="/images/2.jpg" alt="Vice President for Academic Affairs" class="UniManage-card-image">
+                </div>
+                <div class="UniManage-card-content">
+                    <h3 class="UniManage-card-title">Dr. Sarah Al-Hashimi</h3>
+                    <p class="UniManage-card-position">Vice President for Academic Affairs</p>
+                    <button class="UniManage-button UniManage-button-small" data-modal-target="#vpAcademicModal">View Profile</button>
+                </div>
+            </div>
+
+            <div class="UniManage-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="UniManage-card-image-container">
+                    <img src="/images/3.jpg" alt="Vice President for Research" class="UniManage-card-image">
+                </div>
+                <div class="UniManage-card-content">
+                    <h3 class="UniManage-card-title">Dr. Khalid Al-Farsi</h3>
+                    <p class="UniManage-card-position">Vice President for Research</p>
+                    <button class="UniManage-button UniManage-button-small" data-modal-target="#vpResearchModal">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Additional VP Cards Would Automatically Wrap -->
+            <div class="UniManage-card" data-aos="fade-up" data-aos-delay="250">
+                <div class="UniManage-card-image-container">
+                    <img src="/images/4.jpg" alt="Vice President for Finance" class="UniManage-card-image">
+                </div>
+                <div class="UniManage-card-content">
+                    <h3 class="UniManage-card-title">Dr. Omar Al-Zahrani</h3>
+                    <p class="UniManage-card-position">Vice President for Finance</p>
+                    <button class="UniManage-button UniManage-button-small" data-modal-target="#vpFinanceModal">View Profile</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Board of Trustees -->
+    <section class="UniManage-section UniManage-section-alt" id="board-trustees">
+        <div class="UniManage-section-header" data-aos="fade-up">
+            <h2 class="UniManage-section-title">Board of Trustees</h2>
+            <p class="UniManage-section-description">The governing body responsible for university policies and strategic oversight</p>
+        </div>
+
+        <div class="UniManage-tabs" data-aos="fade-up">
+            <button class="UniManage-tab active" data-tab="trustees-members">Members</button>
+            <button class="UniManage-tab" data-tab="trustees-duties">Duties</button>
+        </div>
+
+        <div class="UniManage-tab-content active" data-tab-content="trustees-members">
+            <div class="UniManage-grid UniManage-grid-small" data-cards-per-row="4">
+                <!-- Board Members -->
+                <div class="UniManage-card UniManage-card-horizontal" data-aos="fade-up">
+                    <div class="UniManage-card-image-container">
+                        <img src="/images/1.jpg" alt="Board Member" class="UniManage-card-image">
+                    </div>
+                    <div class="UniManage-card-content">
+                        <h3 class="UniManage-card-title">Sheikh Mohammed Al-Nahyan</h3>
+                        <p class="UniManage-card-position">Chairman</p>
+                        <p class="UniManage-card-text">Minister of Higher Education</p>
+                    </div>
+                </div>
+
+                <div class="UniManage-card UniManage-card-horizontal" data-aos="fade-up" data-aos-delay="50">
+                    <div class="UniManage-card-image-container">
+                        <img src="/images/2.jpg" alt="Board Member" class="UniManage-card-image">
+                    </div>
+                    <div class="UniManage-card-content">
+                        <h3 class="UniManage-card-title">Dr. Fatima Al-Qubaisi</h3>
+                        <p class="UniManage-card-position">Vice Chairman</p>
+                        <p class="UniManage-card-text">CEO of Education Foundation</p>
+                    </div>
+                </div>
+
+                <div class="UniManage-card UniManage-card-horizontal" data-aos="fade-up" data-aos-delay="100">
+                    <div class="UniManage-card-image-container">
+                        <img src="/images/3.jpg" alt="Board Member" class="UniManage-card-image">
+                    </div>
+                    <div class="UniManage-card-content">
+                        <h3 class="UniManage-card-title">Dr. Ali Al-Shammari</h3>
+                        <p class="UniManage-card-position">Member</p>
+                        <p class="UniManage-card-text">President of Science Academy</p>
+                    </div>
+                </div>
+
+                <div class="UniManage-card UniManage-card-horizontal" data-aos="fade-up" data-aos-delay="150">
+                    <div class="UniManage-card-image-container">
+                        <img src="/images/4.jpg" alt="Board Member" class="UniManage-card-image">
+                    </div>
+                    <div class="UniManage-card-content">
+                        <h3 class="UniManage-card-title">Dr. Laila Al-Khalifa</h3>
+                        <p class="UniManage-card-position">Member</p>
+                        <p class="UniManage-card-text">Director of Research Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="UniManage-tab-content" data-tab-content="trustees-duties">
+            <div class="UniManage-content-box" data-aos="fade-up">
+                <h3 class="UniManage-content-title">Primary Duties of the Board</h3>
+                <ul class="UniManage-duties-list">
+                    <li>Establishing the university's mission and strategic direction</li>
+                    <li>Approving annual budgets and financial plans</li>
+                    <li>Overseeing academic quality and standards</li>
+                    <li>Appointing and evaluating the university president</li>
+                    <li>Ensuring compliance with legal and regulatory requirements</li>
+                    <li>Representing the university to external stakeholders</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Council -->
+    <section class="UniManage-section" id="university-council">
+        <div class="UniManage-section-header" data-aos="fade-up">
+            <h2 class="UniManage-section-title">University Council</h2>
+            <p class="UniManage-section-description">The academic governing body responsible for educational policies</p>
+        </div>
+
+        <div class="UniManage-content-box" data-aos="fade-up">
+            <h3 class="UniManage-content-title">Council Responsibilities</h3>
+            <div class="UniManage-columns">
+                <div class="UniManage-column">
+                    <h4 class="UniManage-column-title">Academic Oversight</h4>
+                    <ul class="UniManage-duties-list">
+                        <li>Approve new academic programs</li>
+                        <li>Set admission standards</li>
+                        <li>Oversee curriculum development</li>
+                    </ul>
+                </div>
+                <div class="UniManage-column">
+                    <h4 class="UniManage-column-title">Policy Making</h4>
+                    <ul class="UniManage-duties-list">
+                        <li>Establish academic regulations</li>
+                        <li>Approve examination policies</li>
+                        <li>Set graduation requirements</li>
+                    </ul>
+                </div>
+                <div class="UniManage-column">
+                    <h4 class="UniManage-column-title">Faculty Affairs</h4>
+                    <ul class="UniManage-duties-list">
+                        <li>Recommend faculty appointments</li>
+                        <li>Oversee promotion procedures</li>
+                        <li>Approve research policies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="UniManage-section UniManage-section-alt" id="departments">
+        <div class="UniManage-section-header" data-aos="fade-up">
+            <h2 class="UniManage-section-title">Administrative Departments</h2>
+            <p class="UniManage-section-description">The operational units supporting our university's mission</p>
+        </div>
+
+        <div class="UniManage-accordion" data-aos="fade-up">
+            <!-- Department 1 -->
+            <div class="UniManage-accordion-item">
+                <button class="UniManage-accordion-header">
+                    <span>Academic Affairs</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="UniManage-accordion-content">
+                    <div class="UniManage-department-info">
+                        <h3 class="UniManage-department-title">Office of Academic Affairs</h3>
+                        <p class="UniManage-department-description">Responsible for overseeing all academic programs, curriculum development, faculty affairs, and student academic services.</p>
+
+                        <h4 class="UniManage-staff-title">Key Personnel</h4>
+                        <div class="UniManage-staff-grid" data-cards-per-row="4">
+                            <div class="UniManage-staff-card">
+                                <img src="/images/1.jpg" alt="Dean of Academic Affairs" class="UniManage-staff-image">
+                                <div class="UniManage-staff-details">
+                                    <h5>Dr. Layla Al-Mazroui</h5>
+                                    <p>Dean of Academic Affairs</p>
+                                </div>
+                            </div>
+
+                            <div class="UniManage-staff-card">
+                                <img src="/images/2.jpg" alt="Assistant Dean" class="UniManage-staff-image">
+                                <div class="UniManage-staff-details">
+                                    <h5>Dr. Youssef Al-Hamad</h5>
+                                    <p>Assistant Dean</p>
+                                </div>
+                            </div>
+
+                            <div class="UniManage-staff-card">
+                                <img src="/images/3.jpg" alt="Assistant Dean" class="UniManage-staff-image">
+                                <div class="UniManage-staff-details">
+                                    <h5>Dr. Amina Al-Saadi</h5>
+                                    <p>Assistant Dean</p>
+                                </div>
+                            </div>
+
+                            <div class="UniManage-staff-card">
+                                <img src="/images/4.jpg" alt="Registrar" class="UniManage-staff-image">
+                                <div class="UniManage-staff-details">
+                                    <h5>Mr. Hassan Al-Rashid</h5>
+                                    <p>University Registrar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Department 2 -->
+            <div class="UniManage-accordion-item">
+                <button class="UniManage-accordion-header">
+                    <span>Student Services</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="UniManage-accordion-content">
+                    <div class="UniManage-department-info">
+                        <h3 class="UniManage-department-title">Office of Student Services</h3>
+                        <p class="UniManage-department-description">Provides comprehensive support services to enhance student life and ensure academic success.</p>
+
+                        <h4 class="UniManage-staff-title">Key Personnel</h4>
+                        <div class="UniManage-staff-grid" data-cards-per-row="3">
+                            <div class="UniManage-staff-card">
+                                <img src="/images/1.jpg" alt="Dean of Students" class="UniManage-staff-image">
+                                <div class="UniManage-staff-details">
+                                    <h5>Dr. Karim Al-Bahrani</h5>
+                                    <p>Dean of Students</p>
+                                </div>
+                            </div>
+
+                            <div class="UniManage-staff-card">
+                                <img src="/images/2.jpg" alt="Counseling Director" class="UniManage-staff-image">
+                                <div class="UniManage-staff-details">
+                                    <h5>Dr. Noura Al-Khalifa</h5>
+                                    <p>Counseling Director</p>
+                                </div>
+                            </div>
+
+                            <div class="UniManage-staff-card">
+                                <img src="/images/3.jpg" alt="Activities Director" class="UniManage-staff-image">
+                                <div class="UniManage-staff-details">
+                                    <h5>Mr. Faisal Al-Jaber</h5>
+                                    <p>Activities Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- President Modal -->
+<div class="UniManage-modal" id="presidentModal">
+    <div class="UniManage-modal-content" data-aos="zoom-in">
+        <button class="UniManage-modal-close">&times;</button>
+        <div class="UniManage-modal-header">
+            <img src="/images/1.jpg" alt="University President" class="UniManage-modal-image">
+            <div class="UniManage-modal-title">
+                <h2>Dr. Ahmed Al-Mansoori</h2>
+                <p>University President</p>
+            </div>
+        </div>
+        <div class="UniManage-modal-body">
+            <h3 class="UniManage-modal-section-title">President's Message</h3>
+            <p class="UniManage-modal-text">Welcome to our esteemed university, where we are committed to excellence in education, research, and community service. Our mission is to prepare future leaders through innovative academic programs and transformative learning experiences.</p>
+
+            <h3 class="UniManage-modal-section-title">Key Responsibilities</h3>
+            <ul class="UniManage-duties-list">
+                <li>Provide strategic leadership for the university</li>
+                <li>Oversee academic and administrative operations</li>
+                <li>Represent the university to external stakeholders</li>
+                <li>Ensure financial sustainability</li>
+                <li>Promote research and innovation</li>
+                <li>Foster community engagement</li>
+            </ul>
+
+            <h3 class="UniManage-modal-section-title">Biography</h3>
+            <p class="UniManage-modal-text">Dr. Al-Mansoori has served as our university president since 2015. With a PhD in Educational Leadership from Harvard University, he has over 25 years of experience in higher education administration.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Include AOS library for scroll animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+@section scripts {
+    <script>
+        // Initialize AOS for scroll animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize card grids with specified number of cards per row
+        function initializeCardGrids() {
+            // Set default cards-per-row if not specified
+            document.querySelectorAll('.UniManage-grid:not([data-cards-per-row])').forEach(grid => {
+                grid.setAttribute('data-cards-per-row', '3');
+            });
+
+            document.querySelectorAll('.UniManage-grid-small:not([data-cards-per-row])').forEach(grid => {
+                grid.setAttribute('data-cards-per-row', '4');
+            });
+
+            document.querySelectorAll('.UniManage-staff-grid:not([data-cards-per-row])').forEach(grid => {
+                grid.setAttribute('data-cards-per-row', '4');
+            });
+
+            // Force recalculate on window resize
+            window.addEventListener('resize', function() {
+                document.querySelectorAll('[data-cards-per-row]').forEach(grid => {
+                    grid.style.display = 'none';
+                    grid.offsetHeight; // Trigger reflow
+                    grid.style.display = '';
+                });
+            });
+        }
+
+        // Tab functionality
+        document.querySelectorAll('[data-tab]').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+
+                // Update active tab
+                document.querySelectorAll('[data-tab]').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Update active content
+                document.querySelectorAll('[data-tab-content]').forEach(content => {
+                    content.classList.remove('active');
+                    if (content.getAttribute('data-tab-content') === tabId) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // Accordion functionality
+        document.querySelectorAll('.UniManage-accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const content = header.nextElementSibling;
+
+                // Toggle active class
+                item.classList.toggle('active');
+
+                // Toggle content visibility
+                if (item.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = 0;
+                }
+
+                // Close other accordion items
+                document.querySelectorAll('.UniManage-accordion-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.UniManage-accordion-content').style.maxHeight = 0;
+                    }
+                });
+            });
+        });
+
+        // Modal functionality
+        document.querySelectorAll('[data-modal-target]').forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal-target');
+                const modal = document.querySelector(modalId);
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        document.querySelectorAll('.UniManage-modal-close').forEach(closeButton => {
+            closeButton.addEventListener('click', () => {
+                const modal = closeButton.closest('.UniManage-modal');
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Close modal when clicking outside
+        document.querySelectorAll('.UniManage-modal').forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCardGrids();
+        });
+    </script>
+}

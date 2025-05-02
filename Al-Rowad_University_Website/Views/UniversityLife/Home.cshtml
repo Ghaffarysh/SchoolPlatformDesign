@@ -1,0 +1,538 @@
+﻿@{
+    ViewData["Title"] = "University Life";
+}
+
+<div class="UniversityLife-container">
+    <!-- Hero Section -->
+    <section class="UniversityLife-hero" data-aos="fade">
+        <div class="UniversityLife-hero-content">
+            <h1 class="UniversityLife-hero-title">University Life</h1>
+            <p class="UniversityLife-hero-subtitle">Experience our vibrant campus community and exceptional facilities</p>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <nav class="UniversityLife-quick-nav">
+        <div class="UniversityLife-container">
+            <ul class="UniversityLife-quick-nav-list">
+                <li><a href="#statistics" class="UniversityLife-quick-nav-link">University at a Glance</a></li>
+                <li><a href="#features" class="UniversityLife-quick-nav-link">Features</a></li>
+                <li><a href="#facilities" class="UniversityLife-quick-nav-link">Facilities</a></li>
+                <li><a href="#admissions" class="UniversityLife-quick-nav-link">Admissions</a></li>
+                <li><a href="#campus-life" class="UniversityLife-quick-nav-link">Campus Life</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- University Statistics -->
+    <section class="UniversityLife-section" id="statistics">
+        <div class="UniversityLife-section-header" data-aos="fade-up">
+            <h2 class="UniversityLife-section-title">University at a Glance</h2>
+            <p class="UniversityLife-section-description">Key facts and figures about our academic community</p>
+        </div>
+
+        <div class="UniversityLife-grid" data-cards-per-row="4">
+            <!-- Students -->
+            <div class="UniversityLife-stat-card" data-aos="fade-up">
+                <div class="UniversityLife-stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="UniversityLife-stat-content">
+                    <div class="UniversityLife-stat-number">12,500+</div>
+                    <div class="UniversityLife-stat-label">Students</div>
+                </div>
+            </div>
+
+            <!-- Colleges -->
+            <div class="UniversityLife-stat-card" data-aos="fade-up" data-aos-delay="50">
+                <div class="UniversityLife-stat-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="UniversityLife-stat-content">
+                    <div class="UniversityLife-stat-number">3</div>
+                    <div class="UniversityLife-stat-label">Colleges</div>
+                </div>
+            </div>
+
+            <!-- Programs -->
+            <div class="UniversityLife-stat-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="UniversityLife-stat-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="UniversityLife-stat-content">
+                    <div class="UniversityLife-stat-number">42</div>
+                    <div class="UniversityLife-stat-label">Academic Programs</div>
+                </div>
+            </div>
+
+            <!-- Faculty -->
+            <div class="UniversityLife-stat-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="UniversityLife-stat-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="UniversityLife-stat-content">
+                    <div class="UniversityLife-stat-number">850+</div>
+                    <div class="UniversityLife-stat-label">Faculty Members</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="UniversityLife-tabs" data-aos="fade-up">
+            <button class="UniversityLife-tab active" data-tab="colleges">Colleges</button>
+            <button class="UniversityLife-tab" data-tab="centers">Centers</button>
+            <button class="UniversityLife-tab" data-tab="programs">Programs</button>
+        </div>
+
+        <!-- Colleges Tab -->
+        <div class="UniversityLife-tab-content active" data-tab-content="colleges">
+            <div class="UniversityLife-grid" data-cards-per-row="3">
+                <!-- Sciences & Engineering -->
+                <div class="UniversityLife-card" data-aos="fade-up">
+                    <div class="UniversityLife-card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="UniversityLife-card-content">
+                        <h3 class="UniversityLife-card-title">Sciences & Engineering</h3>
+                        <div class="UniversityLife-card-stats">
+                            <span><i class="fas fa-users"></i> 4,200 Students</span>
+                            <span><i class="fas fa-graduation-cap"></i> 14 Programs</span>
+                        </div>
+                        <ul class="UniversityLife-department-list">
+                            <li>Information Technology</li>
+                            <li>Medical Equipment Engineering</li>
+                            <li>Graphics and Multimedia</li>
+                            <li>And 11 more departments</li>
+                        </ul>
+                        <a href="/colleges/sciences-engineering" class="UniversityLife-link">Explore College <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Medical Sciences -->
+                <div class="UniversityLife-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="UniversityLife-card-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="UniversityLife-card-content">
+                        <h3 class="UniversityLife-card-title">Medical Sciences</h3>
+                        <div class="UniversityLife-card-stats">
+                            <span><i class="fas fa-users"></i> 5,800 Students</span>
+                            <span><i class="fas fa-graduation-cap"></i> 18 Programs</span>
+                        </div>
+                        <ul class="UniversityLife-department-list">
+                            <li>Dentistry</li>
+                            <li>Medical Laboratories</li>
+                            <li>Pharmacy</li>
+                            <li>And 15 more departments</li>
+                        </ul>
+                        <a href="/colleges/medical-sciences" class="UniversityLife-link">Explore College <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Finance & Business -->
+                <div class="UniversityLife-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="UniversityLife-card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="UniversityLife-card-content">
+                        <h3 class="UniversityLife-card-title">Finance & Business</h3>
+                        <div class="UniversityLife-card-stats">
+                            <span><i class="fas fa-users"></i> 2,500 Students</span>
+                            <span><i class="fas fa-graduation-cap"></i> 10 Programs</span>
+                        </div>
+                        <ul class="UniversityLife-department-list">
+                            <li>Accounting</li>
+                            <li>International Business</li>
+                            <li>Management Information Systems</li>
+                            <li>And 7 more departments</li>
+                        </ul>
+                        <a href="/colleges/finance-business" class="UniversityLife-link">Explore College <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Centers Tab -->
+        <div class="UniversityLife-tab-content" data-tab-content="centers">
+            <div class="UniversityLife-grid" data-cards-per-row="2">
+                <!-- Al-Rowwad Center -->
+                <div class="UniversityLife-card UniversityLife-card-center" data-aos="fade-up">
+                    <div class="UniversityLife-card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="UniversityLife-card-content">
+                        <h3 class="UniversityLife-card-title">Al-Rowwad Center for Community Development</h3>
+                        <p class="UniversityLife-card-text">Promoting social responsibility and sustainable development through education, training, and community engagement programs.</p>
+                        <div class="UniversityLife-card-actions">
+                            <a href="#" class="UniversityLife-button UniversityLife-button-small">Visit Center</a>
+                            <a href="#" class="UniversityLife-button UniversityLife-button-outline UniversityLife-button-small">Programs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center for Development and Quality -->
+                <div class="UniversityLife-card UniversityLife-card-center" data-aos="fade-up" data-aos-delay="50">
+                    <div class="UniversityLife-card-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="UniversityLife-card-content">
+                        <h3 class="UniversityLife-card-title">Center for Development and Quality</h3>
+                        <p class="UniversityLife-card-text">Enhancing institutional performance through quality assurance, accreditation support, and continuous improvement initiatives.</p>
+                        <div class="UniversityLife-card-actions">
+                            <a href="#" class="UniversityLife-button UniversityLife-button-small">Visit Center</a>
+                            <a href="#" class="UniversityLife-button UniversityLife-button-outline UniversityLife-button-small">Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Programs Tab -->
+        <div class="UniversityLife-tab-content" data-tab-content="programs">
+            <div class="UniversityLife-accordion" data-aos="fade-up">
+                <!-- Bachelor Programs -->
+                <div class="UniversityLife-accordion-item">
+                    <button class="UniversityLife-accordion-header">
+                        <span>Bachelor's Degree Programs</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="UniversityLife-accordion-content">
+                        <div class="UniversityLife-programs-list">
+                            <div class="UniversityLife-program-category">
+                                <h4>Sciences & Engineering</h4>
+                                <ul>
+                                    <li>BSc in Information Technology</li>
+                                    <li>BSc in Medical Equipment Engineering</li>
+                                    <li>BSc in Graphics and Multimedia</li>
+                                    <!-- More programs -->
+                                </ul>
+                            </div>
+                            <div class="UniversityLife-program-category">
+                                <h4>Medical Sciences</h4>
+                                <ul>
+                                    <li>BSc in Dentistry</li>
+                                    <li>BSc in Medical Laboratories</li>
+                                    <li>BSc in Pharmacy</li>
+                                    <!-- More programs -->
+                                </ul>
+                            </div>
+                            <!-- More categories -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Master Programs -->
+                <div class="UniversityLife-accordion-item">
+                    <button class="UniversityLife-accordion-header">
+                        <span>Master's Degree Programs</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="UniversityLife-accordion-content">
+                        <!-- Master's programs content -->
+                    </div>
+                </div>
+
+                <!-- More program levels -->
+            </div>
+        </div>
+    </section>
+
+    <!-- University Features -->
+    <section class="UniversityLife-section UniversityLife-section-alt" id="features">
+        <div class="UniversityLife-section-header" data-aos="fade-up">
+            <h2 class="UniversityLife-section-title">University Features</h2>
+            <p class="UniversityLife-section-description">What makes our university special</p>
+        </div>
+
+        <div class="UniversityLife-grid" data-cards-per-row="3">
+            <!-- Feature 1 -->
+            <div class="UniversityLife-card UniversityLife-card-feature" data-aos="fade-up">
+                <div class="UniversityLife-card-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="UniversityLife-card-content">
+                    <h3 class="UniversityLife-card-title">Academic Excellence</h3>
+                    <p class="UniversityLife-card-text">Internationally recognized programs taught by distinguished faculty members with industry experience.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="UniversityLife-card UniversityLife-card-feature" data-aos="fade-up" data-aos-delay="50">
+                <div class="UniversityLife-card-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="UniversityLife-card-content">
+                    <h3 class="UniversityLife-card-title">Research Opportunities</h3>
+                    <p class="UniversityLife-card-text">State-of-the-art research facilities and funding opportunities for undergraduate and graduate students.</p>
+                </div>
+            </div>
+
+            <!-- More features -->
+        </div>
+    </section>
+
+    <!-- Academic Calendar -->
+    <section class="UniversityLife-section" id="calendar">
+        <div class="UniversityLife-section-header" data-aos="fade-up">
+            <h2 class="UniversityLife-section-title">Academic Calendar</h2>
+            <p class="UniversityLife-section-description">Important dates for the current academic year</p>
+        </div>
+
+        <div class="UniversityLife-calendar" data-aos="fade-up">
+            <div class="UniversityLife-calendar-header">
+                <h3>2023-2024 Academic Year</h3>
+                <a href="#" class="UniversityLife-button UniversityLife-button-small">Download Calendar (PDF)</a>
+            </div>
+
+            <div class="UniversityLife-calendar-grid">
+                <!-- Fall Semester -->
+                <div class="UniversityLife-calendar-semester">
+                    <h4>Fall Semester 2023</h4>
+                    <ul class="UniversityLife-calendar-events">
+                        <li>
+                            <span class="UniversityLife-calendar-date">Aug 28</span>
+                            <span class="UniversityLife-calendar-event">First Day of Classes</span>
+                        </li>
+                        <li>
+                            <span class="UniversityLife-calendar-date">Oct 15-19</span>
+                            <span class="UniversityLife-calendar-event">Midterm Exams</span>
+                        </li>
+                        <!-- More events -->
+                    </ul>
+                </div>
+
+                <!-- Spring Semester -->
+                <div class="UniversityLife-calendar-semester">
+                    <h4>Spring Semester 2024</h4>
+                    <ul class="UniversityLife-calendar-events">
+                        <li>
+                            <span class="UniversityLife-calendar-date">Jan 15</span>
+                            <span class="UniversityLife-calendar-event">First Day of Classes</span>
+                        </li>
+                        <li>
+                            <span class="UniversityLife-calendar-date">Mar 10-14</span>
+                            <span class="UniversityLife-calendar-event">Midterm Exams</span>
+                        </li>
+                        <!-- More events -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Facilities -->
+    <section class="UniversityLife-section UniversityLife-section-alt" id="facilities">
+        <div class="UniversityLife-section-header" data-aos="fade-up">
+            <h2 class="UniversityLife-section-title">University Facilities</h2>
+            <p class="UniversityLife-section-description">Our world-class campus infrastructure</p>
+        </div>
+
+        <div class="UniversityLife-grid" data-cards-per-row="3">
+            <!-- Facility 1 -->
+            <div class="UniversityLife-card UniversityLife-card-facility" data-aos="fade-up">
+                <div class="UniversityLife-card-icon">
+                    <i class="fas fa-chalkboard"></i>
+                </div>
+                <div class="UniversityLife-card-content">
+                    <h3 class="UniversityLife-card-title">Lecture Halls</h3>
+                    <div class="UniversityLife-card-stats">
+                        <span><i class="fas fa-building"></i> 85 Halls</span>
+                        <span><i class="fas fa-user-graduate"></i> 15-300 Capacity</span>
+                    </div>
+                    <p class="UniversityLife-card-text">Modern, technology-equipped lecture halls with comfortable seating and excellent acoustics.</p>
+                </div>
+            </div>
+
+            <!-- Facility 2 -->
+            <div class="UniversityLife-card UniversityLife-card-facility" data-aos="fade-up" data-aos-delay="50">
+                <div class="UniversityLife-card-icon">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <div class="UniversityLife-card-content">
+                    <h3 class="UniversityLife-card-title">Laboratories</h3>
+                    <div class="UniversityLife-card-stats">
+                        <span><i class="fas fa-flask"></i> 42 Labs</span>
+                        <span><i class="fas fa-tools"></i> Specialized Equipment</span>
+                    </div>
+                    <p class="UniversityLife-card-text">Advanced research and teaching laboratories across all scientific disciplines.</p>
+                </div>
+            </div>
+
+            <!-- More facilities -->
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section class="UniversityLife-section" id="admissions">
+        <div class="UniversityLife-section-header" data-aos="fade-up">
+            <h2 class="UniversityLife-section-title">Admissions & Registration</h2>
+            <p class="UniversityLife-section-description">Start your academic journey with us</p>
+        </div>
+
+        <div class="UniversityLife-grid" data-cards-per-row="2">
+            <!-- Admissions Guide -->
+            <div class="UniversityLife-card UniversityLife-card-admission" data-aos="fade-up">
+                <div class="UniversityLife-card-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="UniversityLife-card-content">
+                    <h3 class="UniversityLife-card-title">Admissions Guide</h3>
+                    <p class="UniversityLife-card-text">Comprehensive guide to application procedures, requirements, and important dates.</p>
+                    <div class="UniversityLife-card-actions">
+                        <a href="#" class="UniversityLife-button">Download Guide (PDF)</a>
+                        <a href="#" class="UniversityLife-button UniversityLife-button-outline">View Online</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Registration System -->
+            <div class="UniversityLife-card UniversityLife-card-admission" data-aos="fade-up" data-aos-delay="50">
+                <div class="UniversityLife-card-icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="UniversityLife-card-content">
+                    <h3 class="UniversityLife-card-title">Registration System</h3>
+                    <p class="UniversityLife-card-text">Online portal for course registration, academic records, and student services.</p>
+                    <div class="UniversityLife-card-actions">
+                        <a href="#" class="UniversityLife-button">Access Registration System</a>
+                        <a href="#" class="UniversityLife-button UniversityLife-button-outline">Help Center</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Life -->
+    <section class="UniversityLife-section UniversityLife-section-alt" id="campus-life">
+        <div class="UniversityLife-section-header" data-aos="fade-up">
+            <h2 class="UniversityLife-section-title">Campus Life</h2>
+            <p class="UniversityLife-section-description">Experience our vibrant university community</p>
+        </div>
+
+        <div class="UniversityLife-tabs" data-aos="fade-up">
+            <button class="UniversityLife-tab active" data-tab="activities">Activities</button>
+            <button class="UniversityLife-tab" data-tab="housing">Student Housing</button>
+            <button class="UniversityLife-tab" data-tab="library">University Library</button>
+            <button class="UniversityLife-tab" data-tab="portal">Student Portal</button>
+        </div>
+
+        <!-- Activities Tab -->
+        <div class="UniversityLife-tab-content active" data-tab-content="activities">
+            <div class="UniversityLife-grid" data-cards-per-row="3">
+                <!-- Activity 1 -->
+                <div class="UniversityLife-card UniversityLife-card-activity" data-aos="fade-up">
+                    <div class="UniversityLife-card-image-container">
+                        <img src="/images/1.jpg" alt="Student Clubs" class="UniversityLife-card-image">
+                    </div>
+                    <div class="UniversityLife-card-content">
+                        <h3 class="UniversityLife-card-title">Student Clubs</h3>
+                        <p class="UniversityLife-card-text">Over 50 student organizations covering academic, cultural, and recreational interests.</p>
+                        <a href="#" class="UniversityLife-link">Explore Clubs <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- More activities -->
+            </div>
+        </div>
+
+        <!-- Other tabs content would be here -->
+    </section>
+</div>
+
+<!-- Include AOS library for scroll animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+@section scripts {
+    <script>
+        // Initialize AOS for scroll animations
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Initialize card grids with specified number of cards per row
+        function initializeCardGrids() {
+            // Set default cards-per-row if not specified
+            document.querySelectorAll('.UniversityLife-grid:not([data-cards-per-row])').forEach(grid => {
+                grid.setAttribute('data-cards-per-row', '3');
+            });
+
+            // Force recalculate on window resize
+            window.addEventListener('resize', function() {
+                document.querySelectorAll('[data-cards-per-row]').forEach(grid => {
+                    grid.style.display = 'none';
+                    grid.offsetHeight; // Trigger reflow
+                    grid.style.display = '';
+                });
+            });
+        }
+
+        // Tab functionality
+        document.querySelectorAll('[data-tab]').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabId = tab.getAttribute('data-tab');
+
+                // Update active tab
+                document.querySelectorAll('[data-tab]').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Update active content
+                document.querySelectorAll('[data-tab-content]').forEach(content => {
+                    content.classList.remove('active');
+                    if (content.getAttribute('data-tab-content') === tabId) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // Accordion functionality
+        document.querySelectorAll('.UniversityLife-accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const content = header.nextElementSibling;
+
+                // Toggle active class
+                item.classList.toggle('active');
+
+                // Toggle content visibility
+                if (item.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = 0;
+                }
+
+                // Close other accordion items
+                document.querySelectorAll('.UniversityLife-accordion-item').forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.UniversityLife-accordion-content').style.maxHeight = 0;
+                    }
+                });
+            });
+        });
+
+        // Quick navigation smooth scrolling
+        document.querySelectorAll('.UniversityLife-quick-nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCardGrids();
+        });
+    </script>
+}

@@ -218,6 +218,7 @@ img {
     display: flex;
     gap: 1rem;
     align-items: center;
+
 }
 
 .action-btn {
@@ -530,6 +531,7 @@ img {
 
     .header-mobile {
         display: flex;
+        height: 70px;
     }
 
     .footer-content {
@@ -681,20 +683,37 @@ img {
 
 
 /* Home Page Specific Styles */
+.home-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto; /* Removed negative margin */
+    overflow-x: hidden;
+    background-color: var(--background-color);
+    transition: var(--transition);
+    position: relative; /* Added for proper stacking */
+}
+
 .home-carousel-section {
     position: relative;
     margin-bottom: 2rem;
-    margin-top:-1.8rem;
+    /* Removed negative margin-top */
+    z-index: 1; /* Ensure proper stacking */
 }
 
 .home-carousel {
     position: relative;
     overflow: hidden;
     height: 85vh;
+    max-height: 800px; /* Added max-height for very large screens */
+    min-height: 400px; /* Added min-height for mobile */
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
+    transform: translateZ(0); /* Hardware acceleration */
 }
-
+/* Add will-change for animated elements */
+[data-aos] {
+    will-change: transform, opacity;
+}
 .home-carousel-inner {
     position: relative;
     width: 100%;
@@ -708,7 +727,7 @@ img {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
     .home-carousel-item.active {
@@ -1619,13 +1638,30 @@ img {
     .home-campuslife-gallery {
         order: -1;
     }
+    .home-section {
+        padding: 2rem 0;
+    }
+
+    .home-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-section-link {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
     .home-carousel {
-        height: 400px;
+        height: 60vh;
+        min-height: 300px;
     }
-
+    /* Disable some animations on mobile if needed */
+    [data-aos] {
+        transition: none !important;
+        transform: none !important;
+    }
     .home-carousel-caption {
         padding: 2rem;
     }
@@ -1656,6 +1692,33 @@ img {
 
     .home-accreditations-logos {
         grid-template-columns: 1fr;
+    }
+    .home-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .home-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .home-overview-content,
+    .home-campuslife-content,
+    .home-accreditations-content {
+        flex-direction: column;
+    }
+
+    .home-overview-image,
+    .home-campuslife-gallery,
+    .home-accreditations-logos {
+        margin-top: 2rem;
+    }
+
+    .home-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .home-quicklinks-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1702,7 +1765,39 @@ img {
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 480px) {
+    .home-hero-title {
+        font-size: 1.8rem;
+    }
 
+    .home-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-quicklinks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-campuslife-stories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-accreditations-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-carousel-caption {
+        padding: 1rem;
+    }
+
+    .home-carousel-title {
+        font-size: 1.5rem;
+    }
+
+    .home-carousel-text {
+        font-size: 1rem;
+    }
+}
 
 
 
@@ -3411,38 +3506,7 @@ img {
 
 
 
-/* Base Styles */
-:root {
-    /* Day Mode Colors */
-    --primary-color: #0a7e62;
-    --secondary-color: #a5d46a;
-    --accent-color: #d4e8a0;
-    --background-color: #f8f9fa;
-    --text-color: #2d3748;
-    --text-light: #4a5568;
-    --white: #ffffff;
-    --gray-light: #e2e8f0;
-    --gray-medium: #cbd5e0;
-    --gray-dark: #718096;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
-
-[data-theme="night"] {
-    /* Night Mode Colors */
-    --primary-color: #0a5d4a;
-    --secondary-color: #7aa852;
-    --accent-color: #b3c98a;
-    --background-color: #1a202c;
-    --text-color: #e2e8f0;
-    --text-light: #cbd5e0;
-    --white: #2d3748;
-    --gray-light: #4a5568;
-    --gray-medium: #718096;
-    --gray-dark: #cbd5e0;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
+/* Colleges and Centers Page Specific Styles */
 .CollegeCenters-container {
     max-width: 1400px;
     margin: 0 auto;
@@ -3633,12 +3697,24 @@ img {
 .CollegeCenters-card-icon {
     font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    padding:2rem 0 0 2rem;
+   
 }
+    .CollegeCenters-card-icon i {
+        background-color: rgba(10, 126, 98, 0.1);
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        color:var(--primary-color);
 
-.CollegeCenters-card-content {
-    padding: 25px;
-}
+    }
+    .CollegeCenters-card-content {
+        padding: 25px;
+    }
 
 .CollegeCenters-card-title {
     font-size: 1.2rem;

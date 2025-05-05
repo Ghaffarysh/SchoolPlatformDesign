@@ -7838,3 +7838,3566 @@ img {
 [data-theme="night"] .leaflet-popup-content b {
     color: var(--secondary-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================================*/
+/*===================== Deanships ======================*/
+/*======================================================*/
+
+/* Academic Affairs Main Container */
+.AcademicAffairs-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: var(--transition);
+    line-height: 1.6;
+}
+
+/* Section Styling */
+.AcademicAffairs-section {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.AcademicAffairs-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.AcademicAffairs-section-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.AcademicAffairs-section-divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 0 auto 1.5rem;
+}
+
+.AcademicAffairs-section-description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.AcademicAffairs-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/academic-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 8rem 2rem 5rem;
+    text-align: center;
+    position: relative;
+}
+
+.AcademicAffairs-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.AcademicAffairs-hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.AcademicAffairs-hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.AcademicAffairs-hero-breadcrumb {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+    .AcademicAffairs-hero-breadcrumb a {
+        color: var(--accent-color);
+        transition: var(--transition);
+    }
+
+        .AcademicAffairs-hero-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+/* Overview Section */
+.AcademicAffairs-overview-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.AcademicAffairs-overview-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.AcademicAffairs-overview-image img {
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: auto;
+}
+
+/* Vision Mission Objectives Section */
+.AcademicAffairs-vmo-section {
+    background-color: rgba(10, 126, 98, 0.05);
+}
+
+.AcademicAffairs-vmo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.AcademicAffairs-vmo-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-vmo-card:hover {
+        transform: translateY(-5px);
+    }
+
+.AcademicAffairs-vmo-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.AcademicAffairs-vmo-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.AcademicAffairs-vmo-text {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.AcademicAffairs-vmo-list {
+    padding-left: 1.5rem;
+}
+
+    .AcademicAffairs-vmo-list li {
+        margin-bottom: 0.8rem;
+        position: relative;
+        color: var(--text-light);
+    }
+
+        .AcademicAffairs-vmo-list li::before {
+            content: '-';
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+/* Academic Programs Section */
+.AcademicAffairs-programs-container {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.AcademicAffairs-programs-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.AcademicAffairs-tab-btn {
+    padding: 1rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+    position: relative;
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-tab-btn.active {
+        color: var(--primary-color);
+    }
+
+        .AcademicAffairs-tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+.AcademicAffairs-programs-content {
+    padding: 2rem;
+}
+
+.AcademicAffairs-tab-pane {
+    display: none;
+}
+
+    .AcademicAffairs-tab-pane.active {
+        display: block;
+    }
+
+.AcademicAffairs-programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.AcademicAffairs-program-card {
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: var(--transition);
+    border: 1px solid var(--gray-light);
+}
+
+    .AcademicAffairs-program-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
+
+.AcademicAffairs-program-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.AcademicAffairs-program-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.AcademicAffairs-program-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.AcademicAffairs-program-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-program-link i {
+        font-size: 0.8rem;
+        transition: var(--transition);
+    }
+
+    .AcademicAffairs-program-link:hover {
+        color: var(--secondary-color);
+    }
+
+        .AcademicAffairs-program-link:hover i {
+            transform: translateX(3px);
+        }
+
+/* Organizational Structure Section */
+.AcademicAffairs-org-section {
+    background-color: rgba(10, 126, 98, 0.05);
+}
+
+.AcademicAffairs-org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.AcademicAffairs-org-level {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.AcademicAffairs-org-node {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    min-width: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.AcademicAffairs-org-position {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.AcademicAffairs-org-name {
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.AcademicAffairs-org-connector {
+    height: 40px;
+    width: 2px;
+    background-color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+    .AcademicAffairs-org-connector::before,
+    .AcademicAffairs-org-connector::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background-color: var(--primary-color);
+        top: 0;
+    }
+
+    .AcademicAffairs-org-connector::before {
+        left: 0;
+        transform: translateX(-100%);
+        width: calc(50% - 1px);
+    }
+
+    .AcademicAffairs-org-connector::after {
+        right: 0;
+        transform: translateX(100%);
+        width: calc(50% - 1px);
+    }
+
+/* Departments Section */
+.AcademicAffairs-departments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.AcademicAffairs-department-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-department-card:hover {
+        transform: translateY(-5px);
+    }
+
+.AcademicAffairs-department-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.AcademicAffairs-department-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.AcademicAffairs-department-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.AcademicAffairs-department-content {
+    padding: 1.5rem;
+}
+
+    .AcademicAffairs-department-content h4 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+.AcademicAffairs-department-tasks {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+    .AcademicAffairs-department-tasks li {
+        margin-bottom: 0.7rem;
+        position: relative;
+        color: var(--text-light);
+    }
+
+        .AcademicAffairs-department-tasks li::before {
+            content: '-';
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+.AcademicAffairs-department-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-department-link i {
+        font-size: 0.8rem;
+        transition: var(--transition);
+    }
+
+    .AcademicAffairs-department-link:hover {
+        color: var(--secondary-color);
+    }
+
+        .AcademicAffairs-department-link:hover i {
+            transform: translateX(3px);
+        }
+
+/* Team Section */
+.AcademicAffairs-team-section {
+    background-color: rgba(10, 126, 98, 0.05);
+}
+
+.AcademicAffairs-team-categories {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.AcademicAffairs-team-category {
+    padding: 0.5rem 1.2rem;
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-team-category.active,
+    .AcademicAffairs-team-category:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+.AcademicAffairs-team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.AcademicAffairs-team-member {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-team-member:hover {
+        transform: translateY(-5px);
+    }
+
+.AcademicAffairs-team-photo {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .AcademicAffairs-team-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+    }
+
+.AcademicAffairs-team-member:hover .AcademicAffairs-team-photo img {
+    transform: scale(1.05);
+}
+
+.AcademicAffairs-team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 126, 98, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.AcademicAffairs-team-member:hover .AcademicAffairs-team-overlay {
+    opacity: 1;
+}
+
+.AcademicAffairs-team-email {
+    color: white;
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-team-email:hover {
+        background: white;
+        color: var(--primary-color);
+    }
+
+.AcademicAffairs-team-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.AcademicAffairs-team-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: var(--primary-color);
+}
+
+.AcademicAffairs-team-position {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.AcademicAffairs-team-bio {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Library Section */
+.AcademicAffairs-library-section {
+    background-color: var(--white);
+}
+
+.AcademicAffairs-library-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.AcademicAffairs-library-text h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.AcademicAffairs-library-text p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.AcademicAffairs-library-image img {
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: auto;
+}
+
+.AcademicAffairs-library-vmo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.AcademicAffairs-library-card {
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--gray-light);
+}
+
+    .AcademicAffairs-library-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--primary-color);
+    }
+
+
+.AcademicAffairs-library-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+    .AcademicAffairs-library-card ul {
+        padding-left: 1.5rem;
+    }
+
+    .AcademicAffairs-library-card li {
+        margin-bottom: 0.8rem;
+        color: var(--text-light);
+        position: relative;
+    }
+
+        .AcademicAffairs-library-card li::before {
+            content: '-';
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+.AcademicAffairs-library-services h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.AcademicAffairs-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.AcademicAffairs-service-card {
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--gray-light);
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+    }
+
+.AcademicAffairs-service-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.AcademicAffairs-service-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.AcademicAffairs-service-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.AcademicAffairs-service-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition);
+}
+
+    .AcademicAffairs-service-link i {
+        font-size: 0.8rem;
+        transition: var(--transition);
+    }
+
+    .AcademicAffairs-service-link:hover {
+        color: var(--secondary-color);
+    }
+
+        .AcademicAffairs-service-link:hover i {
+            transform: translateX(3px);
+        }
+
+/* Graduate Studies Section */
+.AcademicAffairs-graduate-section {
+    background-color: rgba(10, 126, 98, 0.05);
+}
+
+.AcademicAffairs-graduate-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.AcademicAffairs-graduate-text h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.AcademicAffairs-graduate-text p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.AcademicAffairs-graduate-image img {
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    width: 100%;
+    height: auto;
+}
+
+.AcademicAffairs-graduate-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.AcademicAffairs-stat-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.AcademicAffairs-stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.AcademicAffairs-stat-label {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.AcademicAffairs-graduate-services h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Contact Section */
+.AcademicAffairs-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.AcademicAffairs-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.AcademicAffairs-contact-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.AcademicAffairs-contact-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.AcademicAffairs-contact-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.AcademicAffairs-contact-details p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.AcademicAffairs-contact-form {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.AcademicAffairs-form-group {
+    margin-bottom: 1.5rem;
+}
+
+    .AcademicAffairs-form-group input,
+    .AcademicAffairs-form-group select,
+    .AcademicAffairs-form-group textarea {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 1px solid var(--gray-light);
+        border-radius: 0.5rem;
+        font-family: inherit;
+        font-size: 0.95rem;
+        transition: var(--transition);
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+        .AcademicAffairs-form-group input:focus,
+        .AcademicAffairs-form-group select:focus,
+        .AcademicAffairs-form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(10, 126, 98, 0.2);
+        }
+
+    .AcademicAffairs-form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+.AcademicAffairs-form-submit {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+}
+
+    .AcademicAffairs-form-submit:hover {
+        background-color: #088f6d;
+    }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .AcademicAffairs-overview-content,
+    .AcademicAffairs-library-overview,
+    .AcademicAffairs-graduate-overview,
+    .AcademicAffairs-contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .AcademicAffairs-overview-image,
+    .AcademicAffairs-library-image,
+    .AcademicAffairs-graduate-image {
+        order: -1;
+    }
+
+    .AcademicAffairs-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .AcademicAffairs-hero-subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .AcademicAffairs-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .AcademicAffairs-section-title {
+        font-size: 1.8rem;
+    }
+
+    .AcademicAffairs-hero {
+        padding: 6rem 1.5rem 4rem;
+    }
+
+    .AcademicAffairs-hero-title {
+        font-size: 2rem;
+    }
+
+    .AcademicAffairs-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .AcademicAffairs-programs-tabs {
+        flex-wrap: wrap;
+    }
+
+    .AcademicAffairs-org-level {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .AcademicAffairs-org-connector {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .AcademicAffairs-section {
+        padding: 2rem 1rem;
+    }
+
+    .AcademicAffairs-section-title {
+        font-size: 1.6rem;
+    }
+
+    .AcademicAffairs-hero {
+        padding: 5rem 1rem 3rem;
+    }
+
+    .AcademicAffairs-vmo-cards,
+    .AcademicAffairs-departments,
+    .AcademicAffairs-team-members {
+        grid-template-columns: 1fr;
+    }
+
+    .AcademicAffairs-programs-grid,
+    .AcademicAffairs-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Academic Affairs Styles */
+.StudentAffairs-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: var(--text-color);
+}
+
+/* Hero Section */
+.StudentAffairs-hero {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.StudentAffairs-hero-content {
+    flex: 1;
+    z-index: 2;
+    padding-right: 40px;
+}
+
+.StudentAffairs-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+.StudentAffairs-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    max-width: 600px;
+}
+
+.StudentAffairs-hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.StudentAffairs-hero-image {
+    flex: 1;
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+    .StudentAffairs-hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .StudentAffairs-hero-image:hover img {
+        transform: scale(1.03);
+    }
+
+/* Buttons */
+.StudentAffairs-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+    gap: 0.5rem;
+    border: 2px solid transparent;
+}
+
+.StudentAffairs-btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+    .StudentAffairs-btn-primary:hover {
+        background-color: #08634d;
+        transform: translateY(-2px);
+    }
+
+.StudentAffairs-btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+    .StudentAffairs-btn-secondary:hover {
+        background-color: #94c05a;
+        transform: translateY(-2px);
+    }
+
+.StudentAffairs-btn-outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+    .StudentAffairs-btn-outline:hover {
+        background-color: rgba(10, 126, 98, 0.1);
+        transform: translateY(-2px);
+    }
+
+/* Quick Links */
+.StudentAffairs-quicklinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.StudentAffairs-quicklink-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+    .StudentAffairs-quicklink-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .StudentAffairs-quicklink-card h3 {
+        margin: 1rem 0 0.5rem;
+        color: var(--primary-color);
+    }
+
+.StudentAffairs-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+    .StudentAffairs-link:hover {
+        color: var(--secondary-color);
+    }
+
+/* Icon Wrapper */
+.StudentAffairs-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+.StudentAffairs-section {
+    margin: 4rem 0;
+    padding: 2rem 0;
+}
+
+.StudentAffairs-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+    .StudentAffairs-section-header h2 {
+        font-size: 2.2rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        position: relative;
+        display: inline-block;
+    }
+
+        .StudentAffairs-section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+    .StudentAffairs-section-header p {
+        font-size: 1.1rem;
+        color: var(--text-light);
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+/* About Section */
+.StudentAffairs-about-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.StudentAffairs-about-text {
+    flex: 1;
+}
+
+.StudentAffairs-about-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+    .StudentAffairs-about-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .StudentAffairs-about-image:hover img {
+        transform: scale(1.03);
+    }
+
+/* Mission/Vision Tabs */
+.StudentAffairs-mission-vision {
+    margin-top: 2rem;
+}
+
+.StudentAffairs-tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.StudentAffairs-tablinks {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--text-light);
+}
+
+    .StudentAffairs-tablinks.active {
+        background-color: rgba(10, 126, 98, 0.1);
+        color: var(--primary-color);
+    }
+
+    .StudentAffairs-tablinks:hover:not(.active) {
+        background-color: var(--gray-light);
+    }
+
+.StudentAffairs-tabcontent {
+    display: none;
+    padding: 1rem;
+    background-color: rgba(10, 126, 98, 0.05);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease;
+}
+
+    .StudentAffairs-tabcontent ul {
+        padding-left: 1.5rem;
+    }
+
+        .StudentAffairs-tabcontent ul li {
+            margin-bottom: 0.5rem;
+        }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Dean's Message */
+.StudentAffairs-dean-message {
+    background-color: rgba(10, 126, 98, 0.05);
+    border-radius: 12px;
+    padding: 3rem;
+}
+
+.StudentAffairs-dean-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.StudentAffairs-dean-image {
+    flex: 0 0 300px;
+    position: relative;
+}
+
+    .StudentAffairs-dean-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+    }
+
+.StudentAffairs-dean-info {
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+    .StudentAffairs-dean-info h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.3rem;
+    }
+
+    .StudentAffairs-dean-info p {
+        font-size: 0.9rem;
+        color: var(--text-light);
+    }
+
+.StudentAffairs-dean-text {
+    flex: 1;
+}
+
+    .StudentAffairs-dean-text h3 {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .StudentAffairs-dean-text blockquote {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: var(--text-color);
+        border-left: 4px solid var(--secondary-color);
+        padding-left: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .StudentAffairs-dean-text p {
+        margin-bottom: 1rem;
+        line-height: 1.7;
+    }
+
+/* Statistics */
+.StudentAffairs-statistics {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 4rem 0;
+    border-radius: 12px;
+}
+
+[data-theme="night"] .StudentAffairs-statistics {
+    background-color: #0a3d30;
+}
+
+.StudentAffairs-statistics .StudentAffairs-section-header h2,
+.StudentAffairs-statistics .StudentAffairs-section-header p {
+    color: white !important;
+}
+
+    .StudentAffairs-section-header h2::after {
+        background-color: var(--accent-color);
+    }
+
+.StudentAffairs-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.StudentAffairs-stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+    .StudentAffairs-stat-card:hover {
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+.StudentAffairs-stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.StudentAffairs-stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Programs & Admission */
+.StudentAffairs-tabs {
+    margin-top: 2rem;
+}
+
+.StudentAffairs-tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-light);
+    padding-bottom: 0.5rem;
+}
+
+.StudentAffairs-tab-btn {
+    padding: 0.7rem 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--text-light);
+}
+
+    .StudentAffairs-tab-btn.active {
+        background-color: rgba(10, 126, 98, 0.1);
+        color: var(--primary-color);
+        position: relative;
+    }
+
+        .StudentAffairs-tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -11px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+    .StudentAffairs-tab-btn:hover:not(.active) {
+        background-color: var(--gray-light);
+    }
+
+.StudentAffairs-tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+    .StudentAffairs-tab-pane.active {
+        display: block;
+    }
+
+/* Table Styles */
+.StudentAffairs-table-responsive {
+    overflow-x: auto;
+}
+
+.StudentAffairs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+    .StudentAffairs-table th,
+    .StudentAffairs-table td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--gray-light);
+    }
+
+    .StudentAffairs-table th {
+        background-color: rgba(10, 126, 98, 0.1);
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+
+    .StudentAffairs-table tr:hover {
+        background-color: rgba(10, 126, 98, 0.05);
+    }
+
+/* Chart Container */
+.StudentAffairs-chart-container {
+    height: 400px;
+    margin: 2rem 0;
+}
+
+.StudentAffairs-chart-legend {
+    background-color: rgba(10, 126, 98, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Accordion */
+.StudentAffairs-accordion {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.StudentAffairs-accordion-item {
+    border-bottom: 1px solid var(--gray-light);
+}
+
+    .StudentAffairs-accordion-item:last-child {
+        border-bottom: none;
+    }
+
+.StudentAffairs-accordion-header {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    background-color: var(--white);
+    border: none;
+    text-align: left;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+    .StudentAffairs-accordion-header:hover {
+        background-color: var(--gray-light);
+    }
+
+    .StudentAffairs-accordion-header i {
+        transition: transform 0.3s ease;
+    }
+
+.StudentAffairs-accordion-item.active .StudentAffairs-accordion-header {
+    background-color: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+}
+
+    .StudentAffairs-accordion-item.active .StudentAffairs-accordion-header i {
+        transform: rotate(180deg);
+    }
+
+.StudentAffairs-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: var(--white);
+}
+
+.StudentAffairs-accordion-item.active .StudentAffairs-accordion-content {
+    max-height: 500px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.StudentAffairs-accordion-content ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+    .StudentAffairs-accordion-content ul li {
+        margin-bottom: 0.5rem;
+    }
+
+/* Steps */
+.StudentAffairs-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.StudentAffairs-step {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: var(--transition);
+}
+
+    .StudentAffairs-step:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.StudentAffairs-step-number {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.StudentAffairs-step-content {
+    margin-top: 1rem;
+}
+
+    .StudentAffairs-step-content h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .StudentAffairs-step-content p {
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+
+/* Download Box */
+.StudentAffairs-download-box {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    margin-top: 2rem;
+}
+
+    .StudentAffairs-download-box .StudentAffairs-icon-wrapper {
+        flex: 0 0 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .StudentAffairs-download-box h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .StudentAffairs-download-box p {
+        color: var(--text-light);
+        margin-bottom: 1rem;
+    }
+
+/* Resources Grid */
+.StudentAffairs-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.StudentAffairs-resource-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+    .StudentAffairs-resource-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.StudentAffairs-resource-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.8rem;
+}
+
+.StudentAffairs-resource-card h3 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.StudentAffairs-resource-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Organizational Structure */
+.StudentAffairs-org-chart {
+    margin-top: 3rem;
+    position: relative;
+}
+
+.StudentAffairs-org-level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.StudentAffairs-org-node {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.StudentAffairs-org-top {
+    margin-bottom: 3rem;
+}
+
+.StudentAffairs-org-person {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 400px;
+    transition: var(--transition);
+}
+
+    .StudentAffairs-org-person:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.StudentAffairs-org-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 80px;
+}
+
+    .StudentAffairs-org-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.StudentAffairs-org-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.StudentAffairs-org-info p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.StudentAffairs-org-info a {
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+    .StudentAffairs-org-info a:hover {
+        color: var(--secondary-color);
+    }
+
+.StudentAffairs-org-connectors {
+    width: 2px;
+    height: 30px;
+    background-color: var(--gray-medium);
+    margin: 0 auto;
+}
+
+.StudentAffairs-org-bottom {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.StudentAffairs-org-department {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    min-width: 300px;
+    margin-bottom: 2rem;
+}
+
+    .StudentAffairs-org-department h4 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--gray-light);
+    }
+
+.StudentAffairs-org-staff {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Student Housing */
+.StudentAffairs-housing-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.StudentAffairs-housing-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+    .StudentAffairs-housing-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .StudentAffairs-housing-image:hover img {
+        transform: scale(1.03);
+    }
+
+.StudentAffairs-housing-details {
+    flex: 1;
+}
+
+    .StudentAffairs-housing-details h3 {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .StudentAffairs-housing-details p {
+        margin-bottom: 2rem;
+        line-height: 1.7;
+    }
+
+.StudentAffairs-housing-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.StudentAffairs-feature {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+    .StudentAffairs-feature .StudentAffairs-icon-wrapper {
+        margin: 0;
+        flex: 0 0 50px;
+    }
+
+    .StudentAffairs-feature h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.3rem;
+    }
+
+    .StudentAffairs-feature p {
+        font-size: 0.9rem;
+        color: var(--text-light);
+        margin: 0;
+        line-height: 1.5;
+    }
+
+/* Services Grid */
+.StudentAffairs-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.StudentAffairs-service-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+    .StudentAffairs-service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.StudentAffairs-service-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.8rem;
+}
+
+.StudentAffairs-service-card h3 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.StudentAffairs-service-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Announcements */
+.StudentAffairs-announcements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.StudentAffairs-announcement-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 1.5rem;
+    transition: var(--transition);
+}
+
+    .StudentAffairs-announcement-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.StudentAffairs-announcement-date {
+    flex: 0 0 60px;
+    text-align: center;
+    background-color: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.StudentAffairs-day {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+
+.StudentAffairs-month {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    display: block;
+}
+
+.StudentAffairs-announcement-content {
+    flex: 1;
+}
+
+    .StudentAffairs-announcement-content h3 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .StudentAffairs-announcement-content p {
+        color: var(--text-light);
+        margin-bottom: 0.8rem;
+        font-size: 0.95rem;
+    }
+
+.StudentAffairs-view-all {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Contact Section */
+.StudentAffairs-contact-content {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.StudentAffairs-contact-info {
+    flex: 1;
+}
+
+.StudentAffairs-contact-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+    .StudentAffairs-contact-card .StudentAffairs-icon-wrapper {
+        margin: 0;
+        flex: 0 0 50px;
+    }
+
+    .StudentAffairs-contact-card h4 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .StudentAffairs-contact-card p {
+        color: var(--text-light);
+        line-height: 1.6;
+    }
+
+.StudentAffairs-contact-form {
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.StudentAffairs-form-group {
+    margin-bottom: 1.5rem;
+}
+
+    .StudentAffairs-form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--primary-color);
+    }
+
+    .StudentAffairs-form-group input,
+    .StudentAffairs-form-group select,
+    .StudentAffairs-form-group textarea {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 1px solid var(--gray-light);
+        border-radius: 8px;
+        font-family: inherit;
+        transition: var(--transition);
+    }
+
+        .StudentAffairs-form-group input:focus,
+        .StudentAffairs-form-group select:focus,
+        .StudentAffairs-form-group textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(10, 126, 98, 0.2);
+        }
+
+    .StudentAffairs-form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .StudentAffairs-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .StudentAffairs-hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .StudentAffairs-hero-actions {
+        justify-content: center;
+    }
+
+    .StudentAffairs-hero-image {
+        width: 100%;
+    }
+
+    .StudentAffairs-dean-content {
+        flex-direction: column;
+    }
+
+    .StudentAffairs-dean-image {
+        margin-bottom: 2rem;
+    }
+
+    .StudentAffairs-housing-content {
+        flex-direction: column;
+    }
+
+    .StudentAffairs-contact-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .StudentAffairs-title {
+        font-size: 2.2rem;
+    }
+
+    .StudentAffairs-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .StudentAffairs-about-content {
+        flex-direction: column;
+    }
+
+    .StudentAffairs-org-person {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .StudentAffairs-org-avatar {
+        margin-bottom: 1rem;
+    }
+
+    .StudentAffairs-tab-buttons {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .StudentAffairs-hero-actions {
+        flex-direction: column;
+    }
+
+    .StudentAffairs-quicklinks {
+        grid-template-columns: 1fr;
+    }
+
+    .StudentAffairs-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .StudentAffairs-announcements {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Quality Assurance Page Styles */
+.QualityAssurance-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: var(--transition);
+    overflow-x: hidden;
+}
+
+.QualityAssurance-section {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.QualityAssurance-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.QualityAssurance-section-title {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+    .QualityAssurance-section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: var(--secondary-color);
+    }
+
+.QualityAssurance-section-description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.QualityAssurance-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    background-color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+    .QualityAssurance-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background-color: rgba(10, 126, 98, 0.05);
+        z-index: 0;
+    }
+
+.QualityAssurance-hero-content {
+    flex: 1;
+    max-width: 600px;
+    z-index: 1;
+}
+
+.QualityAssurance-hero-title {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.QualityAssurance-hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.QualityAssurance-hero-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.QualityAssurance-hero-image {
+    flex: 1;
+    max-width: 500px;
+    z-index: 1;
+}
+
+    .QualityAssurance-hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+/* Buttons */
+.QualityAssurance-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+    gap: 0.5rem;
+}
+
+.QualityAssurance-btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+    .QualityAssurance-btn-primary:hover {
+        background-color: transparent;
+        color: var(--primary-color);
+    }
+
+.QualityAssurance-btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+    .QualityAssurance-btn-outline:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+.QualityAssurance-btn-link {
+    color: var(--primary-color);
+    padding: 0;
+    font-weight: 600;
+}
+
+    .QualityAssurance-btn-link:hover {
+        color: var(--secondary-color);
+        gap: 0.8rem;
+    }
+
+.QualityAssurance-btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* About Section */
+.QualityAssurance-about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.QualityAssurance-about-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+    .QualityAssurance-about-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .QualityAssurance-about-card h3 {
+        margin: 1.5rem 0 1rem;
+        color: var(--primary-color);
+    }
+
+.QualityAssurance-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.8rem;
+}
+
+/* Dean's Message */
+.QualityAssurance-dean-message {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.QualityAssurance-dean-content {
+    flex: 1;
+    padding: 3rem;
+}
+
+.QualityAssurance-message-content {
+    margin: 2rem 0;
+}
+
+    .QualityAssurance-message-content p {
+        margin-bottom: 1rem;
+    }
+
+.QualityAssurance-dean-signature {
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+    .QualityAssurance-dean-signature p:first-child {
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+.QualityAssurance-dean-image {
+    flex: 1;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+    .QualityAssurance-dean-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* Programs Section */
+.QualityAssurance-programs-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.QualityAssurance-programs-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+    .QualityAssurance-programs-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .QualityAssurance-programs-card h3 {
+        margin: 1.5rem 0 1rem;
+        color: var(--primary-color);
+    }
+
+    .QualityAssurance-programs-card p {
+        margin-bottom: 1.5rem;
+    }
+
+/* Organizational Structure */
+.QualityAssurance-structure-diagram {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.QualityAssurance-structure-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.QualityAssurance-departments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.QualityAssurance-department-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--primary-color);
+}
+
+    .QualityAssurance-department-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+.QualityAssurance-department-icon {
+    color: var(--secondary-color);
+}
+
+.QualityAssurance-department-card ul {
+    padding-left: 1.5rem;
+}
+
+.QualityAssurance-department-card li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+    .QualityAssurance-department-card li::before {
+        content: '-';
+        color: var(--secondary-color);
+        position: absolute;
+        left: -1rem;
+    }
+
+/* Team Section */
+.QualityAssurance-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.QualityAssurance-team-member {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+    .QualityAssurance-team-member:hover {
+        transform: translateY(-5px);
+    }
+
+.QualityAssurance-team-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+    .QualityAssurance-team-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+    }
+
+.QualityAssurance-team-member:hover .QualityAssurance-team-image img {
+    transform: scale(1.05);
+}
+
+.QualityAssurance-team-contact {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+    .QualityAssurance-team-contact a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background-color: var(--primary-color);
+        color: white;
+        transition: var(--transition);
+    }
+
+        .QualityAssurance-team-contact a:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+.QualityAssurance-team-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+    .QualityAssurance-team-info h3 {
+        color: var(--primary-color);
+        margin-bottom: 0.3rem;
+    }
+
+    .QualityAssurance-team-info p {
+        color: var(--text-light);
+        font-size: 0.9rem;
+    }
+
+/* Accreditations */
+.QualityAssurance-accreditations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.QualityAssurance-accreditation-card {
+    position: relative;
+    height: 150px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+    .QualityAssurance-accreditation-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: var(--white);
+        padding: 1rem;
+    }
+
+.QualityAssurance-accreditation-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+
+.QualityAssurance-accreditation-card:hover .QualityAssurance-accreditation-overlay {
+    transform: translateY(0);
+}
+
+.QualityAssurance-accreditation-overlay h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.QualityAssurance-accreditation-overlay p {
+    font-size: 0.8rem;
+}
+
+/* Resources */
+.QualityAssurance-resources-tabs {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.QualityAssurance-tab-buttons {
+    display: flex;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.QualityAssurance-tab-btn {
+    padding: 1rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-light);
+    position: relative;
+    transition: var(--transition);
+}
+
+    .QualityAssurance-tab-btn.active {
+        color: var(--primary-color);
+    }
+
+        .QualityAssurance-tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+.QualityAssurance-tab-content {
+    display: none;
+    padding: 2rem;
+}
+
+    .QualityAssurance-tab-content.active {
+        display: block;
+    }
+
+.QualityAssurance-document-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+    .QualityAssurance-document-card:last-child {
+        border-bottom: none;
+    }
+
+.QualityAssurance-document-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 126, 98, 0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.QualityAssurance-document-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.QualityAssurance-document-info p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Events */
+.QualityAssurance-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.QualityAssurance-event-card {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+    .QualityAssurance-event-card:hover {
+        transform: translateY(-5px);
+    }
+
+.QualityAssurance-event-date {
+    min-width: 80px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.QualityAssurance-event-day {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.QualityAssurance-event-month {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.QualityAssurance-event-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+    .QualityAssurance-event-content h3 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+.QualityAssurance-event-time,
+.QualityAssurance-event-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.QualityAssurance-event-content p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.QualityAssurance-events-btn {
+    text-align: center;
+}
+
+/* Courses */
+.QualityAssurance-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.QualityAssurance-course-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+    .QualityAssurance-course-card:hover {
+        transform: translateY(-5px);
+    }
+
+.QualityAssurance-course-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+    .QualityAssurance-course-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+    }
+
+.QualityAssurance-course-card:hover .QualityAssurance-course-image img {
+    transform: scale(1.05);
+}
+
+.QualityAssurance-course-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.QualityAssurance-course-content {
+    padding: 1.5rem;
+}
+
+    .QualityAssurance-course-content h3 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+.QualityAssurance-course-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.QualityAssurance-course-content p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.QualityAssurance-course-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.QualityAssurance-course-price {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Contact CTA */
+.QualityAssurance-cta {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+}
+
+    .QualityAssurance-cta h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .QualityAssurance-cta p {
+        max-width: 700px;
+        margin: 0 auto 2rem;
+        opacity: 0.9;
+    }
+
+.QualityAssurance-cta-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .QualityAssurance-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .QualityAssurance-hero-content {
+        margin-bottom: 3rem;
+        max-width: 100%;
+    }
+
+    .QualityAssurance-hero-btns {
+        justify-content: center;
+    }
+
+    .QualityAssurance-dean-message {
+        flex-direction: column;
+    }
+
+    .QualityAssurance-dean-image {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .QualityAssurance-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .QualityAssurance-section-title {
+        font-size: 1.8rem;
+    }
+
+    .QualityAssurance-hero-title {
+        font-size: 2.2rem;
+    }
+
+    .QualityAssurance-hero-btns {
+        flex-direction: column;
+    }
+
+    .QualityAssurance-tab-buttons {
+        flex-wrap: wrap;
+    }
+
+    .QualityAssurance-tab-btn {
+        flex: 1 0 auto;
+    }
+
+    .QualityAssurance-cta-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .QualityAssurance-section {
+        padding: 2rem 1rem;
+    }
+
+    .QualityAssurance-section-title {
+        font-size: 1.6rem;
+    }
+
+    .QualityAssurance-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .QualityAssurance-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .QualityAssurance-event-card {
+        flex-direction: column;
+    }
+
+    .QualityAssurance-event-date {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .QualityAssurance-event-day,
+    .QualityAssurance-event-month {
+        font-size: 1.2rem;
+    }
+
+    .QualityAssurance-document-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .QualityAssurance-document-icon {
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Secretariat Page Styles */
+.GeneralSecretariat-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.GeneralSecretariat-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), url('/images/secretariat-hero.jpg'));
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding: 0 2rem;
+}
+
+.GeneralSecretariat-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.GeneralSecretariat-hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color:var(--primary-color);
+}
+
+.GeneralSecretariat-hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    color: var(--text-color);
+}
+
+.GeneralSecretariat-hero-breadcrumb {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+    .GeneralSecretariat-hero-breadcrumb a {
+        color: rgba(255, 255, 255, 0.8);
+        transition: var(--transition);
+        color: var(--text-color);
+    }
+
+        .GeneralSecretariat-hero-breadcrumb a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+    .GeneralSecretariat-hero-breadcrumb span {
+        color: var(--white);
+        font-weight: 500;
+        color:var(--secondary-color);
+    }
+
+/* Section Styles */
+.GeneralSecretariat-section {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.GeneralSecretariat-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.GeneralSecretariat-section-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.GeneralSecretariat-section-divider {
+    height: 3px;
+    width: 80px;
+    background-color: var(--primary-color);
+    margin: 0 auto 1.5rem;
+}
+
+.GeneralSecretariat-section-description {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-light);
+}
+
+.GeneralSecretariat-section-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .GeneralSecretariat-section-content p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+/* VMV Grid */
+.GeneralSecretariat-vmv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.GeneralSecretariat-vmv-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+    .GeneralSecretariat-vmv-card:hover {
+        transform: translateY(-5px);
+    }
+
+.GeneralSecretariat-vmv-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10,126,98,0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.8rem;
+}
+
+.GeneralSecretariat-vmv-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.GeneralSecretariat-vmv-text {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.GeneralSecretariat-vmv-list {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+    .GeneralSecretariat-vmv-list li {
+        margin-bottom: 0.5rem;
+        position: relative;
+    }
+
+        .GeneralSecretariat-vmv-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: -1.2rem;
+        }
+
+/* Objectives Grid */
+.GeneralSecretariat-objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.GeneralSecretariat-objective-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+    padding-left: 4rem;
+}
+
+    .GeneralSecretariat-objective-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.GeneralSecretariat-objective-number {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Structure Chart */
+.GeneralSecretariat-structure-chart {
+    margin: 3rem auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.GeneralSecretariat-structure-level {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.GeneralSecretariat-structure-node {
+    background-color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.GeneralSecretariat-structure-position {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.GeneralSecretariat-structure-connector {
+    height: 40px;
+    width: 2px;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.GeneralSecretariat-structure-connector-branch::before,
+.GeneralSecretariat-structure-connector-branch::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: var(--primary-color);
+    top: 0;
+}
+
+.GeneralSecretariat-structure-connector-branch::before {
+    left: 0;
+    transform: rotate(-30deg);
+    transform-origin: left;
+}
+
+.GeneralSecretariat-structure-connector-branch::after {
+    right: 0;
+    transform: rotate(30deg);
+    transform-origin: right;
+}
+
+.GeneralSecretariat-structure-level-4 {
+    justify-content: space-around;
+}
+
+    .GeneralSecretariat-structure-level-4 .GeneralSecretariat-structure-node {
+        width: 22%;
+        min-width: 150px;
+    }
+
+/* Departments Grid */
+.GeneralSecretariat-departments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.GeneralSecretariat-department-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+    .GeneralSecretariat-department-card:hover {
+        transform: translateY(-5px);
+    }
+
+.GeneralSecretariat-department-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10,126,98,0.1);
+    color: var(--primary-color);
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.GeneralSecretariat-department-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.GeneralSecretariat-department-tasks {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+    .GeneralSecretariat-department-tasks li {
+        margin-bottom: 0.7rem;
+        position: relative;
+        color: var(--text-light);
+    }
+
+        .GeneralSecretariat-department-tasks li::before {
+            content: '-';
+            color: var(--primary-color);
+            position: absolute;
+            left: -1.2rem;
+        }
+
+/* Team Grid */
+.GeneralSecretariat-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.GeneralSecretariat-team-card {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+}
+
+    .GeneralSecretariat-team-card:hover {
+        transform: translateY(-5px);
+    }
+
+.GeneralSecretariat-team-photo-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-color);
+}
+
+.GeneralSecretariat-team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.GeneralSecretariat-team-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.GeneralSecretariat-team-position {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.GeneralSecretariat-team-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.GeneralSecretariat-team-bio {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* CTA Section */
+.GeneralSecretariat-cta {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.GeneralSecretariat-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.GeneralSecretariat-cta-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.GeneralSecretariat-cta-text {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.GeneralSecretariat-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.GeneralSecretariat-cta-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    transition: var(--transition);
+}
+
+.GeneralSecretariat-cta-button-primary {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+    .GeneralSecretariat-cta-button-primary:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        transform: translateY(-2px);
+    }
+
+.GeneralSecretariat-cta-button-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+    .GeneralSecretariat-cta-button-secondary:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+    }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .GeneralSecretariat-hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .GeneralSecretariat-hero {
+        height: 350px;
+    }
+
+    .GeneralSecretariat-hero-title {
+        font-size: 2rem;
+    }
+
+    .GeneralSecretariat-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .GeneralSecretariat-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .GeneralSecretariat-section-title {
+        font-size: 1.7rem;
+    }
+
+    .GeneralSecretariat-structure-level-4 {
+        flex-wrap: wrap;
+    }
+
+        .GeneralSecretariat-structure-level-4 .GeneralSecretariat-structure-node {
+            width: 45%;
+            margin-bottom: 1rem;
+        }
+}
+
+@media (max-width: 480px) {
+    .GeneralSecretariat-hero {
+        height: 300px;
+        padding: 0 1rem;
+    }
+
+    .GeneralSecretariat-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .GeneralSecretariat-section {
+        padding: 2rem 1rem;
+    }
+
+    .GeneralSecretariat-cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .GeneralSecretariat-cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .GeneralSecretariat-structure-level-4 .GeneralSecretariat-structure-node {
+        width: 100%;
+    }
+}
